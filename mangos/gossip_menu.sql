@@ -56,6 +56,9 @@ CREATE TABLE `gossip_menu` (
 LOCK TABLES `gossip_menu` WRITE;
 /*!40000 ALTER TABLE `gossip_menu` DISABLE KEYS */;
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `cond_1`, `cond_1_val_1`, `cond_1_val_2`, `cond_2`, `cond_2_val_1`, `cond_2_val_2`, `condition_id`) VALUES
+(21,518,0,8,1094,0,0,0,0,0),
+(21,519,0,0,0,0,0,0,0,0),
+(22,520,0,0,0,0,0,0,0,0),
 (23,523,0,0,0,0,0,0,0,0),
 (24,522,0,0,0,0,0,0,0,0),
 (64,565,0,0,0,0,0,0,0,0),
@@ -3503,7 +3506,7 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `cond_1`, `cond_1_va
 (20022,2843,0,6,469,0,0,0,0,0),
 (20022,2849,0,8,4102,0,0,0,0,0),
 (20023,2604,0,0,0,0,0,0,0,0),
-(20024,2606,0,0,0,0,0,0,0,0);
+(20024,2013,0,0,0,0,0,0,0,0);
 /*!40000 ALTER TABLE `gossip_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
