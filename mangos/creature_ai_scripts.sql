@@ -19277,7 +19277,6 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (2343601,23436,4,0,100,2,0,0,0,0,41,20000,0,0,0,0,0,0,0,0,0,0,'Image of Dementia - Delayed Despawn on Aggro'),
 (2343602,23436,0,0,100,3,1000,1000,15000,15000,11,41399,0,0,0,0,0,0,0,0,0,0,'Image of Dementia - Cast Whirlwind on Aggro'),
 (2346701,23467,11,0,100,0,0,0,0,0,11,24240,0,1,0,0,0,0,0,0,0,0,'Lord Illidan - Cast Spawn - Cast Red Lightning on Spawn'),
-(2346901,23469,6,0,100,2,0,0,0,0,11,41542,0,2,0,0,0,0,0,0,0,0,'Enslaved Soul - Cast Soul Release on Death'),
 (2350401,23504,11,0,100,0,0,0,0,0,5,28,0,0,0,0,0,0,0,0,0,0,'Brewfest Setup Crew - Working Emote on Spawn'),
 (2352301,23523,1,0,100,2,0,0,0,0,21,0,0,0,22,0,0,0,0,0,0,0,'Ashtongue Elementalist - Prevent Combat Movement and Set Phase to 0 on Spawn'),
 (2352302,23523,4,0,100,2,0,0,0,0,11,42024,1,0,23,1,0,0,0,0,0,0,'Ashtongue Elementalist - Cast Lightning Bolt and Set Phase 1 on Aggro'),
