@@ -10326,7 +10326,6 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (12773,0,0,1,16,0,0,NULL),
 (12774,0,0,1,16,0,0,NULL),
 (12775,0,0,1,16,0,0,NULL),
-(12776,0,0,1,16,0,0,NULL),
 (12777,0,0,1,16,64,0,'40973'),
 (12778,0,8,1,16,0,0,NULL),
 (12779,0,1,1,16,0,0,NULL),
@@ -38778,9 +38777,9 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (44038,0,0,1,16,0,0,NULL),
 (44039,0,0,1,16,0,0,NULL),
 (44041,0,0,1,16,0,0,NULL),
-(44042,0,0,1,16,0,0,NULL);
+(44042,0,0,1,16,0,0,NULL),
+(44043,0,0,1,16,0,0,NULL);
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(44043,0,0,1,16,0,0,NULL),
 (44044,0,0,1,16,0,0,NULL),
 (44045,0,0,1,16,0,0,NULL),
 (44047,0,0,1,16,0,0,NULL),
