@@ -14216,6 +14216,7 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1686103,16861,0,0,80,3,3000,3000,5000,5000,11,28412,4,0,0,0,0,0,0,0,0,0,'Death Lord - Casts Death Coil'),
 (1686301,16863,1,0,100,0,1000,1000,0,0,11,33908,0,0,0,0,0,0,0,0,0,0,'Deranged Helboar - Cast Burning Spikes on Spawn'),
 (1686302,16863,2,0,100,0,30,0,0,0,11,8599,0,0,1,-106,0,0,0,0,0,0,'Deranged Helboar - Cast Enrage When Below 30% HP'),
+(1686303,16863,6,0,100,0,0,0,0,0,11,37689,0,2,0,0,0,0,0,0,0,0,'Deranged Helboar - Cast Tell dog I just died! on Death'),
 (1686701,16867,0,0,100,1,4200,6700,15600,20700,11,11976,1,0,0,0,0,0,0,0,0,0,'Shattered Hand Grunt - Cast Strike'),
 (1686702,16867,0,0,40,1,8500,8500,10000,14000,11,11978,1,0,0,0,0,0,0,0,0,0,'Shattered Hand Grunt - Cast Kick'),
 (1686703,16867,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Shattered Hand Grunt - Flee at 15% HP'),
