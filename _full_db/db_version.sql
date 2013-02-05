@@ -1,5 +1,6 @@
 --
--- Copyright (C) 2005-2012 MaNGOS <http://getmangos.com/>
+-- Copyright (C) 2005-2013 MaNGOS <http://getmangos.com/>
+-- Copyright (C) 2009-2013 MaNGOSZero <https://github.com/mangosone>
 --
 -- This program is free software; you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -37,7 +38,7 @@ DROP TABLE IF EXISTS `db_version`;
 CREATE TABLE `db_version` (
   `version` varchar(120) DEFAULT NULL,
   `creature_ai_version` varchar(120) DEFAULT NULL,
-  `required_s1667_12097_01_mangos_mangos_string` bit(1) DEFAULT NULL
+  `required_s1878_12344_01_mangos_command` bit(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used DB version notes';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -47,8 +48,8 @@ CREATE TABLE `db_version` (
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` (`version`, `creature_ai_version`, `required_s1667_12097_01_mangos_mangos_string`) VALUES
-('C(ontinued)-TBC-DB for MaNGOSOne','ACID 2.0.7 \'Another Wild Adventure\' - Full Release for MaNGOS (2.4.3 Client)',NULL);
+INSERT INTO `db_version` (`version`, `creature_ai_version`, `required_s1878_12344_01_mangos_command`) VALUES
+('OneDatabase 1.0.0 for MaNGOSOne s1881+ and ScriptDevOne s2670+','MaNGOSOne Artificial Creature Intelligence Database',NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

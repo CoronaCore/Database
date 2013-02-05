@@ -38,16 +38,23 @@ creature_loot_template \
 creature_model_info \
 creature_model_race \
 creature_movement \
-creature_movement_scripts \
 creature_movement_template \
 creature_onkill_reputation \
 creature_questrelation \
 creature_template \
 creature_template_addon \
+creature_template_spells \
 db_script_string \
 db_version \
+dbscripts_on_creature_movement \
+dbscripts_on_event \
+dbscripts_on_go_use \
+dbscripts_on_go_template_use \
+dbscripts_on_gossip \
+dbscripts_on_quest_end \
+dbscripts_on_quest_start \
+dbscripts_on_spell \
 disenchant_loot_template \
-event_scripts \
 exploration_basexp \
 fishing_loot_template \
 game_event \
@@ -64,12 +71,9 @@ gameobject_battleground \
 gameobject_involvedrelation \
 gameobject_loot_template \
 gameobject_questrelation \
-gameobject_scripts \
 gameobject_template \
-gameobject_template_scripts \
 gossip_menu \
 gossip_menu_option \
-gossip_scripts \
 instance_template \
 item_enchantment_template \
 item_loot_template \
@@ -112,8 +116,6 @@ pool_gameobject_template \
 pool_pool \
 pool_template \
 prospecting_loot_template \
-quest_end_scripts \
-quest_start_scripts \
 quest_template \
 reference_loot_template \
 reputation_reward_rate \
@@ -135,7 +137,6 @@ spell_pet_auras \
 spell_proc_event \
 spell_proc_item_enchant \
 spell_script_target \
-spell_scripts \
 spell_target_position \
 spell_template \
 spell_threat \
@@ -143,10 +144,11 @@ transports \
 world_template \
 ; do
 
-echo "Dumping ${i}/126 ${TABLE}..."
+echo "Dumping ${i}/127 ${TABLE}..."
 
 echo "--
--- Copyright (C) 2005-2012 MaNGOS <http://getmangos.com/>
+-- Copyright (C) 2005-2013 MaNGOS <http://getmangos.com/>
+-- Copyright (C) 2009-2013 MaNGOSZero <https://github.com/mangosone>
 --
 -- This program is free software; you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by

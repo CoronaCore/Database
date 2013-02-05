@@ -1,5 +1,6 @@
 --
--- Copyright (C) 2005-2012 MaNGOS <http://getmangos.com/>
+-- Copyright (C) 2005-2013 MaNGOS <http://getmangos.com/>
+-- Copyright (C) 2009-2013 MaNGOSZero <https://github.com/mangosone>
 --
 -- This program is free software; you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -39,16 +40,23 @@ ALTER TABLE `creature_loot_template` ORDER BY `entry` ASC;
 ALTER TABLE `creature_model_info` ORDER BY `modelid` ASC;
 ALTER TABLE `creature_model_race` ORDER BY `modelid` ASC;
 ALTER TABLE `creature_movement` ORDER BY `id`, `point` ASC;
-ALTER TABLE `creature_movement_scripts` ORDER BY `id` ASC, `delay` ASC;
 ALTER TABLE `creature_movement_template` ORDER BY `entry`, `point` ASC;
 ALTER TABLE `creature_onkill_reputation` ORDER BY `creature_id` ASC;
 ALTER TABLE `creature_questrelation` ORDER BY `quest` ASC;
 ALTER TABLE `creature_template` ORDER BY `entry` ASC;
 ALTER TABLE `creature_template_addon` ORDER BY `entry` ASC;
+ALTER TABLE `creature_template_spells`  ORDER BY `entry` ASC;
 ALTER TABLE `db_script_string` ORDER BY `entry` ASC;
 ALTER TABLE `db_version` ORDER BY `version` ASC;
+ALTER TABLE `dbscripts_on_creature_movement`  ORDER BY `id` ASC, `delay` ASC;
+ALTER TABLE `dbscripts_on_event`  ORDER BY `id` ASC, `delay` ASC;
+ALTER TABLE `dbscripts_on_go_use`  ORDER BY `id` ASC, `delay` ASC;
+ALTER TABLE `dbscripts_on_go_template_use` ORDER BY `id` ASC, `delay` ASC;
+ALTER TABLE `dbscripts_on_gossip`  ORDER BY `id` ASC, `delay` ASC;
+ALTER TABLE `dbscripts_on_quest_end`  ORDER BY `id` ASC, `delay` ASC;
+ALTER TABLE `dbscripts_on_quest_start`  ORDER BY `id` ASC, `delay` ASC;
+ALTER TABLE `dbscripts_on_spell`  ORDER BY `id` ASC, `delay` ASC;
 ALTER TABLE `disenchant_loot_template` ORDER BY `entry` ASC;
-ALTER TABLE `event_scripts` ORDER BY `id` ASC, `delay` ASC;
 ALTER TABLE `exploration_basexp` ORDER BY `level` ASC;
 ALTER TABLE `fishing_loot_template` ORDER BY `entry` ASC;
 ALTER TABLE `game_event` ORDER BY `entry` ASC;
@@ -65,12 +73,9 @@ ALTER TABLE `gameobject_battleground` ORDER BY `guid` ASC;
 ALTER TABLE `gameobject_involvedrelation` ORDER BY `quest` ASC;
 ALTER TABLE `gameobject_loot_template` ORDER BY `entry` ASC;
 ALTER TABLE `gameobject_questrelation` ORDER BY `quest` ASC;
-ALTER TABLE `gameobject_scripts` ORDER BY `id` ASC, `delay` ASC;
 ALTER TABLE `gameobject_template` ORDER BY `entry` ASC;
-ALTER TABLE `gameobject_template_scripts` ORDER BY `id` ASC, `delay` ASC;
 ALTER TABLE `gossip_menu` ORDER BY `entry` ASC;
 ALTER TABLE `gossip_menu_option` ORDER BY `menu_id`, `id` ASC;
-ALTER TABLE `gossip_scripts` ORDER BY `id` ASC, `delay` ASC;
 ALTER TABLE `instance_template` ORDER BY `map` ASC;
 ALTER TABLE `item_enchantment_template` ORDER BY `entry` ASC;
 ALTER TABLE `item_loot_template` ORDER BY `entry` ASC;
@@ -113,8 +118,6 @@ ALTER TABLE `pool_gameobject_template` ORDER BY `id` ASC;
 -- ALTER TABLE `pool_pool` ORDER BY `pool_id` ASC;
 ALTER TABLE `pool_template` ORDER BY `entry` ASC;
 ALTER TABLE `prospecting_loot_template` ORDER BY `entry` ASC;
-ALTER TABLE `quest_end_scripts` ORDER BY `id` ASC, `delay` ASC;
-ALTER TABLE `quest_start_scripts` ORDER BY `id` ASC, `delay` ASC;
 ALTER TABLE `quest_template` ORDER BY `entry` ASC;
 ALTER TABLE `reference_loot_template` ORDER BY `entry` ASC;
 ALTER TABLE `reputation_reward_rate` ORDER BY `faction` ASC;
@@ -136,7 +139,6 @@ ALTER TABLE `spell_pet_auras` ORDER BY `spell` ASC;
 ALTER TABLE `spell_proc_event` ORDER BY `entry` ASC;
 ALTER TABLE `spell_proc_item_enchant` ORDER BY `entry` ASC;
 ALTER TABLE `spell_script_target` ORDER BY `entry` ASC;
-ALTER TABLE `spell_scripts` ORDER BY `id` ASC, `delay` ASC;
 ALTER TABLE `spell_target_position` ORDER BY `id` ASC;
 ALTER TABLE `spell_template` ORDER BY `id` ASC;
 ALTER TABLE `spell_threat` ORDER BY `entry` ASC;
