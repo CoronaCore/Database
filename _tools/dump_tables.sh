@@ -46,6 +46,7 @@ creature_template_addon \
 creature_template_spells \
 db_script_string \
 db_version \
+dbscripts_on_creature_death \
 dbscripts_on_creature_movement \
 dbscripts_on_event \
 dbscripts_on_go_use \
@@ -144,7 +145,7 @@ transports \
 world_template \
 ; do
 
-echo "Dumping ${i}/127 ${TABLE}..."
+echo "Dumping ${i}/128 ${TABLE}..."
 
 echo "--
 -- Copyright (C) 2005-2013 MaNGOS <http://getmangos.com/>

@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Schema for database 'OneDatabase 1.0.0'</title>
+<title>Schema for database 'OneDatabase 2.0.0'</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf8">
 <style type="text/css">
 <!--
@@ -17,7 +17,7 @@ BR.page {page-break-after: always}
 <body bgcolor='#ffffff' topmargin="0">
 <table width="100%" border="0" cellspacing="0" cellpadding="5">
 <tr>
-<td class="toptext"><p align="center">OneDatabase 1.0.0</td>
+<td class="toptext"><p align="center">OneDatabase 2.0.0</td>
 </tr>
 </table>
 <a name="header">&nbsp</a><ul>
@@ -52,6 +52,7 @@ BR.page {page-break-after: always}
 	<li><a href="#creature_template_spells"><p class="normal">creature_template_spells</a></li>
 	<li><a href="#db_script_string"><p class="normal">db_script_string</a></li>
 	<li><a href="#db_version"><p class="normal">db_version</a></li>
+	<li><a href="#dbscripts_on_creature_death"><p class="normal">dbscripts_on_creature_death</a></li>
 	<li><a href="#dbscripts_on_creature_movement"><p class="normal">dbscripts_on_creature_movement</a></li>
 	<li><a href="#dbscripts_on_event"><p class="normal">dbscripts_on_event</a></li>
 	<li><a href="#dbscripts_on_go_template_use"><p class="normal">dbscripts_on_go_template_use</a></li>
@@ -219,6 +220,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">areatrigger_involvedrelation</td>
@@ -232,6 +234,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -307,6 +310,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">areatrigger_tavern</td>
@@ -320,6 +324,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -505,6 +510,28 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">status</td>
+	<td align="left" valign="top"><p class="normal">tinyint(3) unsigned</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">status_failed_text</td>
+	<td align="left" valign="top"><p class="normal">text</td>
+	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
 </table>
 
 
@@ -527,6 +554,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">areatrigger_teleport</td>
@@ -541,6 +569,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">areatrigger_teleport</td>
@@ -554,6 +583,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">FULLTEXT</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -651,6 +681,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">battleground_events</td>
@@ -664,6 +695,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -679,6 +711,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">battleground_events</td>
@@ -692,6 +725,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -844,6 +878,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">battleground_template</td>
@@ -857,6 +892,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -932,6 +968,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">battlemaster_entry</td>
@@ -945,6 +982,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -1031,6 +1069,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">command</td>
@@ -1044,6 +1083,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -1141,6 +1181,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">conditions</td>
@@ -1149,11 +1190,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">condition_entry</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">54</td>
+	<td align="left" valign="top"><p class="normal">473</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -1169,6 +1211,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">conditions</td>
@@ -1183,6 +1226,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">conditions</td>
@@ -1191,11 +1235,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">3</td>
 	<td align="left" valign="top"><p class="normal">value2</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">54</td>
+	<td align="left" valign="top"><p class="normal">473</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -1436,6 +1481,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature</td>
@@ -1444,11 +1490,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">guid</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">98659</td>
+	<td align="left" valign="top"><p class="normal">99377</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -1464,6 +1511,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature</td>
@@ -1472,11 +1520,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">id</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">12332</td>
+	<td align="left" valign="top"><p class="normal">12422</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -1618,6 +1667,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_addon</td>
@@ -1626,11 +1676,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">guid</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">57857</td>
+	<td align="left" valign="top"><p class="normal">57820</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -1937,6 +1988,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_ai_scripts</td>
@@ -1945,11 +1997,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">id</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">20174</td>
+	<td align="left" valign="top"><p class="normal">20371</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -2080,6 +2133,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_ai_summons</td>
@@ -2088,11 +2142,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">id</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">21</td>
+	<td align="left" valign="top"><p class="normal">25</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -2311,6 +2366,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_ai_texts</td>
@@ -2319,11 +2375,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">entry</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">975</td>
+	<td align="left" valign="top"><p class="normal">986</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -2410,6 +2467,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_battleground</td>
@@ -2423,6 +2481,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -2520,6 +2579,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_equip_template</td>
@@ -2528,11 +2588,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">entry</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">260</td>
+	<td align="left" valign="top"><p class="normal">593</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -2696,6 +2757,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_equip_template_raw</td>
@@ -2704,11 +2766,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">entry</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">1574</td>
+	<td align="left" valign="top"><p class="normal">1080</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -2784,6 +2847,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_involvedrelation</td>
@@ -2798,6 +2862,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_involvedrelation</td>
@@ -2811,6 +2876,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -2897,6 +2963,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_linking</td>
@@ -2905,11 +2972,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">guid</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">5</td>
+	<td align="left" valign="top"><p class="normal">0</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -3018,6 +3086,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_linking_template</td>
@@ -3032,6 +3101,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_linking_template</td>
@@ -3040,11 +3110,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">2</td>
 	<td align="left" valign="top"><p class="normal">map</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">166</td>
+	<td align="left" valign="top"><p class="normal">178</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -3175,6 +3246,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_loot_template</td>
@@ -3189,6 +3261,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_loot_template</td>
@@ -3202,6 +3275,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -3321,6 +3395,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_model_info</td>
@@ -3334,6 +3409,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -3431,6 +3507,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_model_race</td>
@@ -3445,6 +3522,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_model_race</td>
@@ -3458,6 +3536,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -3709,6 +3788,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_movement</td>
@@ -3723,6 +3803,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_movement</td>
@@ -3731,11 +3812,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">2</td>
 	<td align="left" valign="top"><p class="normal">point</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">49297</td>
+	<td align="left" valign="top"><p class="normal">48360</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -3987,6 +4069,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_movement_template</td>
@@ -4001,6 +4084,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_movement_template</td>
@@ -4009,11 +4093,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">2</td>
 	<td align="left" valign="top"><p class="normal">point</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">2123</td>
+	<td align="left" valign="top"><p class="normal">2283</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -4177,6 +4262,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_onkill_reputation</td>
@@ -4190,6 +4276,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -4265,6 +4352,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_questrelation</td>
@@ -4279,6 +4367,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_questrelation</td>
@@ -4292,6 +4381,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -5126,6 +5216,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_template</td>
@@ -5140,6 +5231,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_template</td>
@@ -5153,6 +5245,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -5294,6 +5387,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_template_addon</td>
@@ -5302,11 +5396,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">entry</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">10200</td>
+	<td align="left" valign="top"><p class="normal">10203</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -5415,6 +5510,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">creature_template_spells</td>
@@ -5423,11 +5519,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">entry</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">4391</td>
+	<td align="left" valign="top"><p class="normal">4402</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -5569,6 +5666,61 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">sound</td>
+	<td align="left" valign="top"><p class="normal">mediumint(8) unsigned</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">type</td>
+	<td align="left" valign="top"><p class="normal">tinyint(3) unsigned</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">language</td>
+	<td align="left" valign="top"><p class="normal">tinyint(3) unsigned</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">emote</td>
+	<td align="left" valign="top"><p class="normal">smallint(5) unsigned</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">comment</td>
+	<td align="left" valign="top"><p class="normal">text</td>
+	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
 </table>
 
 
@@ -5591,6 +5743,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">db_script_string</td>
@@ -5599,11 +5752,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">entry</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">436</td>
+	<td align="left" valign="top"><p class="normal">480</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -5658,10 +5812,233 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
-	<td align="left" valign="top"><p class="normal">required_s1878_12344_01_mangos_command</td>
+	<td align="left" valign="top"><p class="normal">required_s2049_12540_01_mangos_command</td>
 	<td align="left" valign="top"><p class="normal">bit(1)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">YES</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+</table>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+	<td class="fieldheader" width="100%" align="left" valign="top">Indexes</td>
+</tr>
+</table>
+
+
+<a href="#header"><p class="normal">Back</a><br class=page>
+<p><a name='dbscripts_on_creature_death'>&nbsp</a>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+	<td class="headtext" width="30%" align="left" valign="top">dbscripts_on_creature_death</td>
+	<td>&nbsp</td>
+<tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+	<td class="fieldheader" width="100%" align="left" valign="top">Fields</td>
+</tr>
+</table>
+<table width="100%" cellspacing="0" cellapdding="2" border="1">
+<tr>
+	<td align="center" valign="top" class="fieldcolumn">Field</td>
+	<td align="center" valign="top" class="fieldcolumn">Type</td>
+	<td align="center" valign="top" class="fieldcolumn">Collation</td>
+	<td align="center" valign="top" class="fieldcolumn">Null</td>
+	<td align="center" valign="top" class="fieldcolumn">Key</td>
+	<td align="center" valign="top" class="fieldcolumn">Default</td>
+	<td align="center" valign="top" class="fieldcolumn">Extra</td>
+	<td align="center" valign="top" class="fieldcolumn">Privileges</td>
+	<td align="center" valign="top" class="fieldcolumn">Comment</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">id</td>
+	<td align="left" valign="top"><p class="normal">mediumint(8) unsigned</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">delay</td>
+	<td align="left" valign="top"><p class="normal">int(10) unsigned</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">command</td>
+	<td align="left" valign="top"><p class="normal">mediumint(8) unsigned</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">datalong</td>
+	<td align="left" valign="top"><p class="normal">mediumint(8) unsigned</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">datalong2</td>
+	<td align="left" valign="top"><p class="normal">int(10) unsigned</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">buddy_entry</td>
+	<td align="left" valign="top"><p class="normal">int(10) unsigned</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">search_radius</td>
+	<td align="left" valign="top"><p class="normal">int(10) unsigned</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">data_flags</td>
+	<td align="left" valign="top"><p class="normal">tinyint(3) unsigned</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">dataint</td>
+	<td align="left" valign="top"><p class="normal">int(11)</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">dataint2</td>
+	<td align="left" valign="top"><p class="normal">int(11)</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">dataint3</td>
+	<td align="left" valign="top"><p class="normal">int(11)</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">dataint4</td>
+	<td align="left" valign="top"><p class="normal">int(11)</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">x</td>
+	<td align="left" valign="top"><p class="normal">float</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">y</td>
+	<td align="left" valign="top"><p class="normal">float</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">z</td>
+	<td align="left" valign="top"><p class="normal">float</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">o</td>
+	<td align="left" valign="top"><p class="normal">float</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">comments</td>
+	<td align="left" valign="top"><p class="normal">varchar(255)</td>
+	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -7587,6 +7964,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">disenchant_loot_template</td>
@@ -7601,6 +7979,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">disenchant_loot_template</td>
@@ -7614,6 +7993,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -7689,6 +8069,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">exploration_basexp</td>
@@ -7702,6 +8083,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -7832,6 +8214,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">fishing_loot_template</td>
@@ -7846,6 +8229,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">fishing_loot_template</td>
@@ -7859,6 +8243,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -7989,6 +8374,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">game_event</td>
@@ -8002,6 +8388,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -8077,6 +8464,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">game_event_creature</td>
@@ -8085,11 +8473,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">guid</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">2858</td>
+	<td align="left" valign="top"><p class="normal">2872</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -8220,6 +8609,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">game_event_creature_data</td>
@@ -8234,6 +8624,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">game_event_creature_data</td>
@@ -8247,6 +8638,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -8322,6 +8714,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">game_event_gameobject</td>
@@ -8335,6 +8728,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -8443,6 +8837,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">game_event_mail</td>
@@ -8456,6 +8851,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -8471,6 +8867,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">game_event_mail</td>
@@ -8484,6 +8881,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -8559,6 +8957,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">game_event_quest</td>
@@ -8573,6 +8972,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">game_event_quest</td>
@@ -8586,6 +8986,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -8672,6 +9073,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">game_graveyard_zone</td>
@@ -8686,6 +9088,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">game_graveyard_zone</td>
@@ -8694,11 +9097,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">2</td>
 	<td align="left" valign="top"><p class="normal">ghost_zone</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">526</td>
+	<td align="left" valign="top"><p class="normal">525</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -8829,6 +9233,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">game_tele</td>
@@ -8842,6 +9247,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -9038,6 +9444,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">game_weather</td>
@@ -9051,6 +9458,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -9269,6 +9677,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">gameobject</td>
@@ -9277,11 +9686,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">guid</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">78788</td>
+	<td align="left" valign="top"><p class="normal">80026</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -9291,11 +9701,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">map</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">59</td>
+	<td align="left" valign="top"><p class="normal">63</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -9305,11 +9716,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">id</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">9848</td>
+	<td align="left" valign="top"><p class="normal">11432</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -9396,6 +9808,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">gameobject_battleground</td>
@@ -9409,6 +9822,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -9484,6 +9898,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">gameobject_involvedrelation</td>
@@ -9498,6 +9913,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">gameobject_involvedrelation</td>
@@ -9511,6 +9927,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -9641,6 +10058,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">gameobject_loot_template</td>
@@ -9655,6 +10073,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">gameobject_loot_template</td>
@@ -9663,11 +10082,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">2</td>
 	<td align="left" valign="top"><p class="normal">item</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">18107</td>
+	<td align="left" valign="top"><p class="normal">18092</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -9743,6 +10163,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">gameobject_questrelation</td>
@@ -9757,6 +10178,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">gameobject_questrelation</td>
@@ -9770,6 +10192,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -10219,6 +10642,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">gameobject_template</td>
@@ -10227,11 +10651,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">entry</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">13682</td>
+	<td align="left" valign="top"><p class="normal">13684</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -10241,11 +10666,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">name</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">4560</td>
+	<td align="left" valign="top"><p class="normal">4561</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -10343,6 +10769,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">gossip_menu</td>
@@ -10356,6 +10783,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -10371,6 +10799,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">gossip_menu</td>
@@ -10379,11 +10808,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">3</td>
 	<td align="left" valign="top"><p class="normal">script_id</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">3453</td>
+	<td align="left" valign="top"><p class="normal">3513</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -10580,6 +11010,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">gossip_menu_option</td>
@@ -10594,6 +11025,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">gossip_menu_option</td>
@@ -10602,11 +11034,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">2</td>
 	<td align="left" valign="top"><p class="normal">id</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">2607</td>
+	<td align="left" valign="top"><p class="normal">2662</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -10737,6 +11170,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">instance_template</td>
@@ -10750,6 +11184,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -10836,6 +11271,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">item_enchantment_template</td>
@@ -10850,6 +11286,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">item_enchantment_template</td>
@@ -10863,6 +11300,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -10993,6 +11431,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">item_loot_template</td>
@@ -11007,6 +11446,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">item_loot_template</td>
@@ -11020,6 +11460,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -11106,6 +11547,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">item_required_target</td>
@@ -11119,6 +11561,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -11134,6 +11577,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">item_required_target</td>
@@ -11142,11 +11586,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">3</td>
 	<td align="left" valign="top"><p class="normal">targetEntry</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">57</td>
+	<td align="left" valign="top"><p class="normal">60</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -12751,6 +13196,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">item_template</td>
@@ -12759,11 +13205,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">entry</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">24074</td>
+	<td align="left" valign="top"><p class="normal">24220</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -12773,11 +13220,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">name</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">24074</td>
+	<td align="left" valign="top"><p class="normal">24220</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -12787,11 +13235,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">class</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">13</td>
+	<td align="left" valign="top"><p class="normal">14</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -13032,6 +13481,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">locales_creature</td>
@@ -13045,6 +13495,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -13285,6 +13736,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">locales_gameobject</td>
@@ -13298,6 +13750,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -13549,6 +14002,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">locales_gossip_menu_option</td>
@@ -13563,6 +14017,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">locales_gossip_menu_option</td>
@@ -13576,6 +14031,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -13816,6 +14272,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">locales_item</td>
@@ -13829,6 +14286,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -15301,6 +15759,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">locales_npc_text</td>
@@ -15314,6 +15773,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -15466,6 +15926,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">locales_page_text</td>
@@ -15479,6 +15940,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -15631,6 +16093,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">locales_points_of_interest</td>
@@ -15644,6 +16107,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -16588,6 +17052,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">locales_quest</td>
@@ -16601,6 +17066,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -16698,6 +17164,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">mail_level_reward</td>
@@ -16712,6 +17179,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">mail_level_reward</td>
@@ -16725,6 +17193,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -16855,6 +17324,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">mail_loot_template</td>
@@ -16869,6 +17339,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">mail_loot_template</td>
@@ -16882,6 +17353,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -17045,6 +17517,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">mangos_string</td>
@@ -17053,11 +17526,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">entry</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">846</td>
+	<td align="left" valign="top"><p class="normal">847</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -17133,6 +17607,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">npc_gossip</td>
@@ -17146,6 +17621,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -18090,6 +18566,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">npc_text</td>
@@ -18098,11 +18575,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">ID</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">5859</td>
+	<td align="left" valign="top"><p class="normal">5865</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -18222,6 +18700,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">npc_trainer</td>
@@ -18236,6 +18715,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">npc_trainer</td>
@@ -18249,6 +18729,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -18368,6 +18849,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">npc_trainer_template</td>
@@ -18382,6 +18864,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">npc_trainer_template</td>
@@ -18395,6 +18878,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -18481,6 +18965,17 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">condition_id</td>
+	<td align="left" valign="top"><p class="normal">mediumint(8) unsigned</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
 </table>
 
 
@@ -18503,6 +18998,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">npc_vendor</td>
@@ -18517,6 +19013,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">npc_vendor</td>
@@ -18530,6 +19027,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -18616,6 +19114,17 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">condition_id</td>
+	<td align="left" valign="top"><p class="normal">mediumint(8) unsigned</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
 </table>
 
 
@@ -18638,6 +19147,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">npc_vendor_template</td>
@@ -18652,6 +19162,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">npc_vendor_template</td>
@@ -18665,6 +19176,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -18751,6 +19263,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">page_text</td>
@@ -18764,6 +19277,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -18927,6 +19441,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">pet_levelstats</td>
@@ -18941,6 +19456,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">pet_levelstats</td>
@@ -18954,6 +19470,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -19051,6 +19568,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">pet_name_generation</td>
@@ -19064,6 +19582,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -19172,6 +19691,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">petcreateinfo_spell</td>
@@ -19185,6 +19705,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -19315,6 +19836,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">pickpocketing_loot_template</td>
@@ -19329,6 +19851,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">pickpocketing_loot_template</td>
@@ -19342,6 +19865,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -19439,6 +19963,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">player_classlevelstats</td>
@@ -19453,6 +19978,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">player_classlevelstats</td>
@@ -19466,6 +19992,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -19607,6 +20134,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">player_levelstats</td>
@@ -19620,6 +20148,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -19635,6 +20164,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">player_levelstats</td>
@@ -19648,6 +20178,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -19723,6 +20254,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">player_xp_for_level</td>
@@ -19736,6 +20268,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -19877,6 +20410,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">playercreateinfo</td>
@@ -19891,6 +20425,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">playercreateinfo</td>
@@ -19904,6 +20439,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -20012,6 +20548,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">playercreateinfo_action</td>
@@ -20026,6 +20563,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">playercreateinfo_action</td>
@@ -20039,6 +20577,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -20054,6 +20593,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">playercreateinfo_action</td>
@@ -20068,6 +20608,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">playercreateinfo_action</td>
@@ -20081,6 +20622,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -20178,6 +20720,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">playercreateinfo_item</td>
@@ -20192,6 +20735,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">playercreateinfo_item</td>
@@ -20205,6 +20749,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -20302,6 +20847,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">playercreateinfo_spell</td>
@@ -20315,6 +20861,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -20330,6 +20877,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">playercreateinfo_spell</td>
@@ -20338,11 +20886,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">3</td>
 	<td align="left" valign="top"><p class="normal">Spell</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">1956</td>
+	<td align="left" valign="top"><p class="normal">2008</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -20473,6 +21022,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">points_of_interest</td>
@@ -20486,6 +21036,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -20583,6 +21134,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">pool_creature</td>
@@ -20597,6 +21149,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">pool_creature</td>
@@ -20610,6 +21163,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -20707,6 +21261,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">pool_creature_template</td>
@@ -20721,6 +21276,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">pool_creature_template</td>
@@ -20734,6 +21290,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -20831,6 +21388,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">pool_gameobject</td>
@@ -20839,11 +21397,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">guid</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">26993</td>
+	<td align="left" valign="top"><p class="normal">28160</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -20853,11 +21412,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">pool_entry</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">13496</td>
+	<td align="left" valign="top"><p class="normal">9386</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -20955,6 +21515,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">pool_gameobject_template</td>
@@ -20969,6 +21530,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">pool_gameobject_template</td>
@@ -20982,6 +21544,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -21079,6 +21642,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">pool_pool</td>
@@ -21087,11 +21651,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">pool_id</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">6206</td>
+	<td align="left" valign="top"><p class="normal">6056</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -21101,11 +21666,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">mother_pool</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">124</td>
+	<td align="left" valign="top"><p class="normal">131</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -21192,6 +21758,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">pool_template</td>
@@ -21200,11 +21767,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">entry</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">6126</td>
+	<td align="left" valign="top"><p class="normal">6202</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -21335,6 +21903,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">prospecting_loot_template</td>
@@ -21349,6 +21918,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">prospecting_loot_template</td>
@@ -21362,6 +21932,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -22812,6 +23383,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">quest_template</td>
@@ -22825,6 +23397,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -22955,6 +23528,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">reference_loot_template</td>
@@ -22969,6 +23543,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">reference_loot_template</td>
@@ -22977,11 +23552,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">2</td>
 	<td align="left" valign="top"><p class="normal">item</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">6754</td>
+	<td align="left" valign="top"><p class="normal">6773</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -23079,6 +23655,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">reputation_reward_rate</td>
@@ -23092,6 +23669,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -23288,6 +23866,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">reputation_spillover_template</td>
@@ -23301,6 +23880,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -23365,6 +23945,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">reserved_name</td>
@@ -23378,6 +23959,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -23453,6 +24035,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">scripted_areatrigger</td>
@@ -23466,6 +24049,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -23541,6 +24125,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">scripted_event_id</td>
@@ -23549,11 +24134,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">id</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">28</td>
+	<td align="left" valign="top"><p class="normal">29</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -23640,6 +24226,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">skill_discovery_template</td>
@@ -23653,6 +24240,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -23750,6 +24338,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">skill_extra_item_template</td>
@@ -23763,6 +24352,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -23838,6 +24428,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">skill_fishing_base_level</td>
@@ -23851,6 +24442,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -23981,6 +24573,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">skinning_loot_template</td>
@@ -23995,6 +24588,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">skinning_loot_template</td>
@@ -24008,6 +24602,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -24094,6 +24689,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_affect</td>
@@ -24108,6 +24704,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_affect</td>
@@ -24121,6 +24718,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -24208,6 +24806,17 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
+	<td align="left" valign="top"><p class="normal">condition_id</td>
+	<td align="left" valign="top"><p class="normal">mediumint(8) unsigned</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
+<tr>
 	<td align="left" valign="top"><p class="normal">aura_spell</td>
 	<td align="left" valign="top"><p class="normal">mediumint(8)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
@@ -24273,6 +24882,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_area</td>
@@ -24286,6 +24896,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -24301,6 +24912,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_area</td>
@@ -24314,6 +24926,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -24329,6 +24942,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_area</td>
@@ -24342,6 +24956,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -24357,6 +24972,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_area</td>
@@ -24370,6 +24986,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -24489,6 +25106,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_bonus_data</td>
@@ -24502,6 +25120,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -24610,6 +25229,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_chain</td>
@@ -24623,6 +25243,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -24698,6 +25319,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_elixir</td>
@@ -24711,6 +25333,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -24797,6 +25420,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_learn_spell</td>
@@ -24811,6 +25435,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_learn_spell</td>
@@ -24824,6 +25449,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -24910,6 +25536,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_pet_auras</td>
@@ -24924,6 +25551,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_pet_auras</td>
@@ -24937,6 +25565,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -25111,6 +25740,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_proc_event</td>
@@ -25124,6 +25754,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -25199,6 +25830,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_proc_item_enchant</td>
@@ -25212,6 +25844,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -25276,6 +25909,17 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">inverseEffectMask</td>
+	<td align="left" valign="top"><p class="normal">mediumint(8) unsigned</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">0</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+</tr>
 </table>
 
 
@@ -25298,6 +25942,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_script_target</td>
@@ -25311,6 +25956,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
@@ -25326,6 +25972,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_script_target</td>
@@ -25334,11 +25981,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">3</td>
 	<td align="left" valign="top"><p class="normal">targetEntry</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">925</td>
+	<td align="left" valign="top"><p class="normal">1741</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -25458,6 +26106,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_target_position</td>
@@ -25466,11 +26115,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">id</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">416</td>
+	<td align="left" valign="top"><p class="normal">418</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -25656,6 +26306,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_template</td>
@@ -25664,11 +26315,12 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">1</td>
 	<td align="left" valign="top"><p class="normal">id</td>
 	<td align="left" valign="top"><p class="normal">A</td>
-	<td align="left" valign="top"><p class="normal">20</td>
+	<td align="left" valign="top"><p class="normal">23</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -25766,6 +26418,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">spell_threat</td>
@@ -25779,6 +26432,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -25865,6 +26519,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">transports</td>
@@ -25878,6 +26533,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>
@@ -25953,6 +26609,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top" class="fieldcolumn">Null</td>
 	<td align="left" valign="top" class="fieldcolumn">Index<br>type</td>
 	<td align="left" valign="top" class="fieldcolumn">Comment</td>
+	<td align="left" valign="top" class="fieldcolumn">Index<br>comment</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">world_template</td>
@@ -25966,6 +26623,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 </tr>
 </table>

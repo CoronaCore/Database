@@ -1,6 +1,6 @@
 --
 -- Copyright (C) 2005-2013 MaNGOS <http://getmangos.com/>
--- Copyright (C) 2009-2013 MaNGOSZero <https://github.com/mangosone>
+-- Copyright (C) 2009-2013 MaNGOSOne <https://github.com/mangosone>
 --
 -- This program is free software; you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -242,7 +242,7 @@ INSERT INTO `spell_proc_event` (`entry`, `SchoolMask`, `SpellFamilyName`, `Spell
 (30881,127,0,0,0,0,0,0,0,0,5),
 (30937,32,0,0,0,0,0,0,0,0,0),
 (31124,0,8,536870926,536870926,536870926,0,0,0,0,0),
-(31233,0,8,38658768896,38658768896,38658768896,0,0,0,0,0),
+(31233,0,8,38658768896,38658768896,38658768896,66832,0,0,0,0),
 (31244,0,8,38658768896,38658768896,38658768896,0,4,0,0,0),
 (31394,32,0,0,0,0,0,0,0,0,0),
 (31569,0,3,65536,65536,65536,0,0,0,0,0),

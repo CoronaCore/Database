@@ -1,6 +1,6 @@
 --
 -- Copyright (C) 2005-2013 MaNGOS <http://getmangos.com/>
--- Copyright (C) 2009-2013 MaNGOSZero <https://github.com/mangosone>
+-- Copyright (C) 2009-2013 MaNGOSOne <https://github.com/mangosone>
 --
 -- This program is free software; you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -71,6 +71,9 @@ INSERT INTO `spell_template` (`id`, `proc_flags`, `proc_chance`, `duration_index
 (35904,0,101,21,28,44,8,0,20405,64,0,'Summon Nether Charge right of the caster'),
 (35905,0,101,21,28,43,8,0,20405,64,0,'Summon Nether Charge left of the caster'),
 (35906,0,101,21,28,41,8,0,20405,64,0,'Summon Nether Charge front of the caster'),
+(37264,0,101,21,28,18,7,0,21729,64,0,'Power Converters: Summon Electromental (from cata)'),
+(37278,0,101,21,28,18,1,0,21737,64,0,'Power Converters: Summon Mini-Electromental (from cata)'),
+(37365,0,101,21,28,18,1,0,21757,64,0,'Power Converters: Summon Big Flavor Electromental (from cata)'),
 (44920,0,101,21,6,1,0,56,24941,0,0,'Model - Shattered Sun Marksman - BE Male Tier 4'),
 (44924,0,101,21,6,1,0,56,24945,0,0,'Model - Shattered Sun Marksman - BE Female Tier 4'),
 (44928,0,101,21,6,1,0,56,24949,0,0,'Model - Shattered Sun Marksman - Draenei Male Tier 4'),

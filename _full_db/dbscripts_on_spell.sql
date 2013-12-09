@@ -1,6 +1,6 @@
 --
 -- Copyright (C) 2005-2013 MaNGOS <http://getmangos.com/>
--- Copyright (C) 2009-2013 MaNGOSZero <https://github.com/mangosone>
+-- Copyright (C) 2009-2013 MaNGOSOne <https://github.com/mangosone>
 --
 -- This program is free software; you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -63,16 +63,31 @@ CREATE TABLE `dbscripts_on_spell` (
 LOCK TABLES `dbscripts_on_spell` WRITE;
 /*!40000 ALTER TABLE `dbscripts_on_spell` DISABLE KEYS */;
 INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(11365,0,18,1000,0,0,0,0,0,0,0,0,0,0,0,0,'despawn self'),
+(21052,0,15,8329,0,0,0,6,0,0,0,0,0,0,0,0,'Enthralled Deeprun Rat - Cast Suicide'),
 (25650,0,6,530,0,0,0,0,0,0,0,0,-589.976,4078.31,143.258,4.48305,''),
 (25650,0,6,530,0,0,0,0,0,0,0,0,-593.429,4077.95,93.8245,5.32893,''),
 (25652,0,6,530,0,0,0,0,0,0,0,0,-594,4079.26,93.85,5.28,''),
 (25652,0,6,530,0,0,0,0,0,0,0,0,-589.976,4078.31,143.258,4.48305,''),
 (31550,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'Despawn Time Keepers'),
+(32314,0,8,18393,0,0,0,0,0,0,0,0,0,0,0,0,'Killcredit for Quest: 9931'),
+(32314,1,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'Despawn Target'),
+(34526,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,'quest 10223 kill credit'),
+(34526,0,15,34539,0,0,0,6,0,0,0,0,0,0,0,0,'cast Explosion (spell may not be correct)'),
+(34526,1,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'despawn 10223 trigger despawn'),
+(34874,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'Despawn Underbog Mushroom'),
+(37366,0,18,30000,0,0,0,6,0,0,0,0,0,0,0,0,'despawn self'),
 (37751,0,2,159,9,0,0,0,0,0,0,0,0,0,0,0,''),
 (37751,1,4,46,33554434,0,0,0,0,0,0,0,0,0,0,0,''),
 (37752,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,''),
 (37752,1,1,26,0,0,0,0,0,0,0,0,0,0,0,0,''),
-(37752,1,5,46,33554434,0,0,0,0,0,0,0,0,0,0,0,'');
+(37752,1,5,46,33554434,0,0,0,0,0,0,0,0,0,0,0,''),
+(39398,0,18,30000,0,0,0,6,0,0,0,0,0,0,0,0,'despawn self'),
+(39844,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,'quest 10223 kill credit'),
+(39844,1,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'despawn 10223 trigger despawn'),
+(45930,0,15,46339,0,0,0,6,0,0,0,0,0,0,0,0,'Cast Bonfire Disguise'),
+(45941,0,15,45939,0,0,0,6,0,0,0,0,0,0,0,0,'cast Summon Ahune\'s Loot'),
+(46623,0,15,46622,0,0,0,6,0,0,0,0,0,0,0,0,'cast Summon Ahune\'s Loot, Heroic');
 /*!40000 ALTER TABLE `dbscripts_on_spell` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

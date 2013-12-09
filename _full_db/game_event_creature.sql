@@ -1,6 +1,6 @@
 --
 -- Copyright (C) 2005-2013 MaNGOS <http://getmangos.com/>
--- Copyright (C) 2009-2013 MaNGOSZero <https://github.com/mangosone>
+-- Copyright (C) 2009-2013 MaNGOSOne <https://github.com/mangosone>
 --
 -- This program is free software; you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -83,7 +83,7 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 (11011,12),
 (11215,20),
 (11271,20),
-(12401,10),
+(11657,10),
 (12604,42),
 (12954,8),
 (13423,18),
@@ -2906,7 +2906,21 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 (98392,65),
 (98393,65),
 (98394,65),
-(98395,64);
+(98395,64),
+(99650,1),
+(99651,1),
+(99652,1),
+(138384,1),
+(138385,1),
+(138386,1),
+(138387,1),
+(138388,1),
+(138389,1),
+(138390,1),
+(138391,1),
+(138392,1),
+(138393,1),
+(138394,1);
 /*!40000 ALTER TABLE `game_event_creature` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
