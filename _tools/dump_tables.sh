@@ -145,7 +145,7 @@ transports \
 world_template \
 ; do
 
-echo "Dumping ${i}/128 ${TABLE}..."
+echo "Dumping ${i}/127 ${TABLE}..."
 
 echo "--
 -- Copyright (C) 2005-2013 MaNGOS <http://getmangos.com/>
