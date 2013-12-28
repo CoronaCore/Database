@@ -19,3 +19,7 @@
 
 -- Fix bad backport for raf system need first by core done
 DELETE FROM `playercreateinfo_spell` WHERE `Spell` = 45927;
+
+-- Fix Spell 46707
+DELETE FROM `spell_script_target` WHERE `entry` = 46707;
+INSERT INTO `spell_script_target` VALUES (46707, 1, 25653, 0);
