@@ -21,7 +21,11 @@
 DELETE FROM `playercreateinfo_spell` WHERE `Spell` = 45927;
 
 -- Sunwell Fixes Start
-DELETE FROM `creature_template`_addon WHERE entry=24895;
+DELETE FROM `creature_template_addon` WHERE `entry` = 24895;
+
+UPDATE creature_template SET `unit_flags` = `unit_flags` |32832 WHERE `entry` IN (25708, 25319, 24892, 24891);
+UPDATE creature_template SET `unit_flags` = `unit_flags` |33555200 WHERE `entry` IN (26262, 26254, 25703);
+UPDATE creature_template SET `unit_flags` = `unit_flags` |33587200 WHERE `entry` = 25653;
 
 DELETE FROM `spell_script_target` WHERE `entry` IN (44844, 44884, 45666, 44845, 46609, 46610, 46637, 46650, 46652, 46638, 45388, 45389, 45714, 46707);
 INSERT INTO `spell_script_target` VALUES
