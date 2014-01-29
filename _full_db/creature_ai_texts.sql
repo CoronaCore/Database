@@ -477,7 +477,6 @@ INSERT INTO `creature_ai_texts` (`entry`, `content_default`, `content_loc1`, `co
 (-676,'Help me!  Please help me!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18206'),
 (-675,'How can you just leave me here?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18206'),
 (-674,'For Kargath!  For Victory!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'17264'),
-(-673,'You there!  Keep a close watch on these ramparts, intruders could approach at any time!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'17264'),
 (-672,'This world is OURS!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,1,0,'Common Orc Say'),
 (-671,'Incompetent fools! Auchindoun should\'ve been ours... look at yourselves scrambling like rats!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'22381'),
 (-670,'Pathetic worm!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18848'),

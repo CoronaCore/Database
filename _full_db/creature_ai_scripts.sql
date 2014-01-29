@@ -14585,9 +14585,8 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1725903,17259,0,0,100,7,1300,9200,30100,34100,11,16244,0,1,0,0,0,0,0,0,0,0,'Bonechewer Hungerer - Cast Demoralizing Shout'),
 (1725904,17259,0,0,100,7,3600,15400,5600,24100,11,6713,1,1,0,0,0,0,0,0,0,0,'Bonechewer Hungerer - Cast Disarm'),
 (1725905,17259,2,0,100,6,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Bonechewer Hungerer - Flee at 15% HP'),
-(1726401,17264,1,0,30,6,180000,240000,180000,240000,1,-673,0,0,0,0,0,0,0,0,0,0,'Bonechewer Ravener - Random Say OOC'),
-(1726402,17264,4,0,20,6,0,0,0,0,1,-156,-181,-672,0,0,0,0,0,0,0,0,'Bonechewer Ravener - Random Say on Aggro'),
-(1726403,17264,0,0,100,7,3200,8800,20100,30100,11,30621,1,0,13,-40,1,0,0,0,0,0,'Bonechewer Ravener - Cast Kidney Shot and Reduce Aggro'),
+(1726401,17264,4,0,20,6,0,0,0,0,1,-156,-181,-672,0,0,0,0,0,0,0,0,'Bonechewer Ravener - Random Say on Aggro'),
+(1726402,17264,0,0,100,7,3200,8800,20100,30100,11,30621,1,0,13,-40,1,0,0,0,0,0,'Bonechewer Ravener - Cast Kidney Shot and Reduce Aggro'),
 (1726701,17267,1,0,100,2,0,0,0,0,21,0,0,0,22,0,0,0,0,0,0,0,'Fiendish Imp - Prevent Combat Movement and Set Phase to 0 on Spawn'),
 (1726702,17267,4,0,100,2,0,0,0,0,11,30050,1,0,23,1,0,0,0,0,0,0,'Fiendish Imp - Cast Fireball and Set Phase 1 on Aggro'),
 (1726703,17267,9,5,100,3,0,30,3400,4800,11,30050,1,0,0,0,0,0,0,0,0,0,'Fiendish Imp - Cast Fireball (Phase 1)'),
@@ -17357,9 +17356,9 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1964305,19643,3,5,100,0,7,0,0,0,21,1,0,0,23,1,0,0,0,0,0,0,'Sunfury Astromancer - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 (1964306,19643,9,5,100,0,25,80,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Sunfury Astromancer - Start Combat Movement at 25 Yards (Phase 1)'),
 (1964307,19643,9,5,100,0,5,15,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Sunfury Astromancer - Prevent Combat Movement at 15 Yards (Phase 1)'),
-(1964308,19643,9,5,100,0,0,5,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Sunfury Astromancer - Start Combat Movement Below 5 Yards (Phase 1)');
+(1964308,19643,9,5,100,0,0,5,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Sunfury Astromancer - Start Combat Movement Below 5 Yards (Phase 1)'),
+(1964309,19643,3,3,100,1,100,15,100,100,23,-1,0,0,0,0,0,0,0,0,0,0,'Sunfury Astromancer - Set Phase 1 when Mana is above 15% (Phase 2)');
 INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
-(1964309,19643,3,3,100,1,100,15,100,100,23,-1,0,0,0,0,0,0,0,0,0,0,'Sunfury Astromancer - Set Phase 1 when Mana is above 15% (Phase 2)'),
 (1964310,19643,9,0,100,1,0,30,12000,16000,11,35914,4,1,0,0,0,0,0,0,0,0,'Sunfury Astromancer - Cast Astral Focus'),
 (1964311,19643,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Sunfury Astromancer - Set Phase to 0 on Evade'),
 (1965701,19657,1,0,100,0,0,0,0,0,21,0,0,0,22,0,0,0,0,0,0,0,'Summoner Kanthin - Prevent Combat Movement and Set Phase to 0 on Spawn'),
