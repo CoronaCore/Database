@@ -86,7 +86,9 @@ INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalon
 (39844,1,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'despawn 10223 trigger despawn'),
 (45930,0,15,46339,0,0,0,6,0,0,0,0,0,0,0,0,'Cast Bonfire Disguise'),
 (45941,0,15,45939,0,0,0,6,0,0,0,0,0,0,0,0,'cast Summon Ahune\'s Loot'),
-(46623,0,15,46622,0,0,0,6,0,0,0,0,0,0,0,0,'cast Summon Ahune\'s Loot, Heroic');
+(46609,0,15,46610,0,0,0,8,0,0,0,0,0,0,0,0,'Cast Freeze on Ice Barrier'),
+(46623,0,15,46622,0,0,0,6,0,0,0,0,0,0,0,0,'cast Summon Ahune\'s Loot, Heroic'),
+(46650,0,15,46652,0,0,0,8,0,0,0,0,0,0,0,0,'Cast Open Brutallus Back Door on Fire Barrier');
 /*!40000 ALTER TABLE `dbscripts_on_spell` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
