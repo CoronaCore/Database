@@ -17,14 +17,14 @@
 --
 
 UPDATE gameobject SET state = 0 WHERE id IN (SELECT entry FROM gameobject_template WHERE type = 0 AND data0 = 1);
-UPDATE creature_template SET unit_flags=unit_flags&~2048 WHERE unit_flags&2048=2048;
-UPDATE creature_template SET unit_flags=unit_flags&~524288 WHERE unit_flags&524288=524288;
-UPDATE creature_template SET unit_flags=unit_flags&~67108864 WHERE unit_flags&67108864=67108864;
-UPDATE creature_template SET unit_flags=unit_flags&~8388608 WHERE unit_flags&8388608=8388608;
-UPDATE creature, creature_template SET creature.curhealth=creature_template.minhealth,creature.curmana=creature_template.minmana WHERE creature.id=creature_template.entry and creature_template.RegenHealth = '1';
+UPDATE creature_template SET UnitFlags=UnitFlags&~2048 WHERE UnitFlags&2048=2048;
+UPDATE creature_template SET UnitFlags=UnitFlags&~524288 WHERE UnitFlags&524288=524288;
+UPDATE creature_template SET UnitFlags=UnitFlags&~67108864 WHERE UnitFlags&67108864=67108864;
+UPDATE creature_template SET UnitFlags=UnitFlags&~8388608 WHERE UnitFlags&8388608=8388608;
+UPDATE creature, creature_template SET creature.curhealth=creature_template.MinLevelHealth,creature.curmana=creature_template.MinLevelMana WHERE creature.id=creature_template.entry and creature_template.RegenerateHealth = '1';
 UPDATE creature_template SET dynamicflags = dynamicflags &~ 223;
-UPDATE creature_template SET npcflag = npcflag&~16777216; -- UNIT_NPC_FLAG_SPELLCLICK
-UPDATE creature_template SET modelid_2 = 0 WHERE modelid_1 = modelid_2;
+UPDATE creature_template SET NpcFlags = NpcFlags&~16777216; -- UNIT_NPC_FLAG_SPELLCLICK
+UPDATE creature_template SET ModelId2 = 0 WHERE ModelId1 = ModelId2;
 -- UPDATE creature_template c1, creature_template c2 SET c2.unit_class=c1.unit_class, c2.npcflag=c1.npcflag, c2.faction_A=c1.faction_A, c2.faction_H=c1.faction_H, c2.speed_walk=c1.speed_walk, c2.speed_run=c1.speed_run, c2.scale=c1.scale, c2.InhabitType=c1.InhabitType, c2.MovementType=c1.MovementType, c2.unit_flags=c1.unit_flags WHERE c2.entry=c1.difficulty_entry_1;
 -- UPDATE creature_template c1, creature_template c2 SET c2.unit_class=c1.unit_class, c2.npcflag=c1.npcflag, c2.faction_A=c1.faction_A, c2.faction_H=c1.faction_H, c2.speed_walk=c1.speed_walk, c2.speed_run=c1.speed_run, c2.scale=c1.scale, c2.InhabitType=c1.InhabitType, c2.MovementType=c1.MovementType, c2.unit_flags=c1.unit_flags WHERE c2.entry=c1.difficulty_entry_2;
 -- UPDATE creature_template c1, creature_template c2 SET c2.unit_class=c1.unit_class, c2.npcflag=c1.npcflag, c2.faction_A=c1.faction_A, c2.faction_H=c1.faction_H, c2.speed_walk=c1.speed_walk, c2.speed_run=c1.speed_run, c2.scale=c1.scale, c2.InhabitType=c1.InhabitType, c2.MovementType=c1.MovementType, c2.unit_flags=c1.unit_flags WHERE c2.entry=c1.difficulty_entry_3;
@@ -57,4 +57,4 @@ DELETE FROM creature_movement WHERE id NOT IN (SELECT guid FROM creature);
 DELETE FROM game_event_creature WHERE guid NOT IN (SELECT guid FROM creature);
 DELETE FROM creature_questrelation WHERE id NOT IN (SELECT entry FROM creature_template);
 DELETE FROM creature_onkill_reputation WHERE creature_id NOT IN (SELECT entry FROM creature_template);
-UPDATE creature_template SET npcflag=npcflag|2 WHERE entry IN (SELECT id FROM creature_questrelation UNION SELECT id FROM creature_involvedrelation);
+UPDATE creature_template SET NpcFlags=NpcFlags|2 WHERE entry IN (SELECT id FROM creature_questrelation UNION SELECT id FROM creature_involvedrelation);

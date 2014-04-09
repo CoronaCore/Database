@@ -44,6 +44,7 @@ ALTER TABLE `creature_onkill_reputation` ORDER BY `creature_id` ASC;
 ALTER TABLE `creature_questrelation` ORDER BY `quest` ASC;
 ALTER TABLE `creature_template` ORDER BY `entry` ASC;
 ALTER TABLE `creature_template_addon` ORDER BY `entry` ASC;
+ALTER TABLE `creature_template_classlevelstats` ORDER BY `Level` ASC;
 ALTER TABLE `creature_template_spells`  ORDER BY `entry` ASC;
 ALTER TABLE `db_script_string` ORDER BY `entry` ASC;
 ALTER TABLE `db_version` ORDER BY `version` ASC;
