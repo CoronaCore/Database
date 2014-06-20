@@ -71,6 +71,7 @@ INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalon
 (31550,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'Despawn Time Keepers'),
 (32314,0,8,18393,0,0,0,0,0,0,0,0,0,0,0,0,'Killcredit for Quest: 9931'),
 (32314,1,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'Despawn Target'),
+(33655,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,'create from quest_template'),
 (34526,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,'quest 10223 kill credit'),
 (34526,0,15,34539,0,0,0,6,0,0,0,0,0,0,0,0,'cast Explosion (spell may not be correct)'),
 (34526,1,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'despawn 10223 trigger despawn'),
