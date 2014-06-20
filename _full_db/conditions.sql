@@ -41,7 +41,7 @@ CREATE TABLE `conditions` (
   `value2` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'data field two for the condition',
   PRIMARY KEY (`condition_entry`),
   UNIQUE KEY `unique_conditions` (`type`,`value1`,`value2`)
-) ENGINE=MyISAM AUTO_INCREMENT=485 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Condition System';
+) ENGINE=MyISAM AUTO_INCREMENT=493 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Condition System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -534,7 +534,13 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES
 (481,-1,477,478),
 (482,-1,480,481),
 (483,17,26801,0),
-(484,-1,483,482);
+(484,-1,483,482),
+(485,17,26798,0),
+(486,-1,485,481),
+(487,-3,484,0),
+(488,-1,481,487),
+(489,17,26797,0),
+(490,-1,489,481);
 /*!40000 ALTER TABLE `conditions` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
