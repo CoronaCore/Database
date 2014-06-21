@@ -66,7 +66,8 @@ INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`,
 (20427,3,0,0,0,21332,100,32,2000005558,0,0,0,0,0,0,0,'say veneratus epilogue 2'),
 (20427,5,15,36781,0,21332,100,32,0,0,0,0,0,0,0,0,'cast Despawn Spirit Hunter'),
 (20427,6,14,36620,0,0,0,6,0,0,0,0,0,0,0,0,'remove Spirit Hunter aura'),
-(20427,6,18,0,0,21332,100,32,0,0,0,0,0,0,0,0,'despawn spirit hunter');
+(20427,6,18,0,0,21332,100,32,0,0,0,0,0,0,0,0,'despawn spirit hunter'),
+(21419,10,23,20577,0,0,0,8,0,0,0,0,0,0,0,0,'temp model');
 /*!40000 ALTER TABLE `dbscripts_on_creature_death` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
