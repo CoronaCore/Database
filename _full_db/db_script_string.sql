@@ -84,6 +84,7 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000000025,'An Avatar of Terokk! To arms!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000026,'Whoops!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000027,'Greatmother Hawkwind gestures to the pitcher of water sitting on the edge of the well.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
+(2000000028,'The People of Westfall salute $N, a brave and valiant defender of freedom.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,NULL),
 (2000000029,'Follow, $N. I will soon begin the summoning...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000030,'This makes sense!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000031,'Your body is mine! Our fates are forever intertwined!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
@@ -149,6 +150,13 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000000097,'... oops.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000098,'Take a Candle of Beckoning from this crate, $N.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000107,'Hey $N! Don\'t forget to grab a crate, a manual and a command stick!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000000118,'Easier then I expected... the sigil of Thoradin is whole, once again.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000000130,'Thank you, $N.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000000131,'I\'m sure I can find a use for this mixture...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000000132,'%s tries opening Maury\'s Clubbed Foot...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
+(2000000133,'Bah! $N, this foot won\'t budge!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000000139,'Corbett, dear. Harlan needs a load of knitted shirts and pants as soon as we can manage.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000000140,'Corbett, you there? Harlan needs another load of knitted goods. Can you take it to him?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000141,'My pleasure, sugar drop. I\'ll be back soon...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000142,'Business must be good down at the bazaar. I\'ll get him resupplied right away!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000143,'Hm...after dropping this off, I think I\'ll head to that cheese shop for a snack.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
@@ -182,6 +190,7 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000000178,'Yes, this is unfortunate.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000179,'$N, I have confirmed that this blood is from the Bonechewer clan of orcs, tainted with demonic power. I\'m afraid, however, that my current equipment can delve no deeper into this mystery...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000180,'Speak with Wing Commander Brack, $N. He\'ll outfit you with one of our armored wyvern destroyers. And, good luck!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000000184,'There, it is completed.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000187,'The arakkoa are hidden... everywhere!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000188,'Rest now, Adaris. You need to recover your strength.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000195,'As you wish...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Ironbark the Redeemed yell'),
@@ -296,6 +305,7 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000005085,'Let me help you with those.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005086,'Drink this, it will help.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005087,'You\'re going to be just fine.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000005088,'Wait, $N!!! It looks like we\'re going to need some help here...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005089,'Go swiftly $N. My fate is in your hands.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005090,'Honor your heroes! On this day, they have dealt a great blow against one of our most hated enemies! The false Warchief, Rend Blackhand, has fallen! ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,6,0,0,NULL),
 (2000005091,'Be bathed in my power! Drink in my might! Battle for the glory of the Horde!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,6,0,0,NULL),
@@ -588,7 +598,10 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000005560,'Chase me if you dare! I run without a care!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Pusillin yell 2'),
 (2000005561,'Why would you ever want to harm me!? Come. Friends we can be!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Pusillin yell 3'),
 (2000005562,'DIE?! You make Pusillin cry!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Pusillin yell 4'),
-(2000005563,'Say hello to my little friends!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Pusillin yell 5');
+(2000005563,'Say hello to my little friends!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Pusillin yell 5'),
+(2000005564,'I. . .I. . .don\'t. . .feel. . .right. . .',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000005565,'My mind. . .my flesh. . .I\'m. . .rotting. . . .!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000005566,'I raise my brew and hope to be rid of the likes of you! Cheers, you no good scoundrel, $N!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL);
 /*!40000 ALTER TABLE `db_script_string` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
