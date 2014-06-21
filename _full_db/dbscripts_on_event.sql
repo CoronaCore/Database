@@ -456,6 +456,8 @@ INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalon
 (10692,0,10,17996,0,0,0,8,0,0,0,0,2522.43,-4767.05,102.552,2.17,'Horde Eastwall Tower capture - summon Lordaeron Fighter'),
 (10700,0,10,17209,0,0,0,8,0,0,0,0,2987.5,-3049.11,120.126,5.75959,'Horde Plaguewood Tower progress event - summon William Kielar'),
 (10701,0,10,17209,0,0,0,8,0,0,0,0,2987.5,-3049.11,120.126,5.75959,'Alliance Plaguewood Tower progress event - summon William Kielar'),
+(10745,1,8,17413,0,0,0,0,0,0,0,0,0,0,0,0,'quest 9545'),
+(10745,1,7,9545,0,0,0,0,0,0,0,0,0,0,0,0,'hack? - add quest completed'),
 (11027,2,10,17715,900000,0,0,0,0,0,0,0,-1953.43,-12887.1,86.1,0.86,''),
 (11087,0,10,17592,180000,0,0,0,0,0,0,0,-1233.44,-12563.6,157.842,1.27,'Razormaw spawn'),
 (11087,9,26,0,0,17592,50,0,0,0,0,0,0,0,0,0,'start attack'),
