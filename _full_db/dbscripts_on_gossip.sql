@@ -181,6 +181,7 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 (7939,0,15,34907,0,0,0,0,0,0,0,0,0,0,0,0,'cast Taxi - Stair of Destiny to Honor Hold'),
 (7959,0,30,534,0,0,0,0,0,0,0,0,0,0,0,0,'taxi path'),
 (7976,0,7,10172,5,0,0,0,0,0,0,0,0,0,0,0,'quest complete 10172'),
+(8062,0,10,20518,60000,0,0,0,0,0,0,0,4007.38,1517.12,-115.535,0.87,'spawn Image of Wind Trader Marid'),
 (8072,0,15,34891,0,0,0,0,0,0,0,0,0,0,0,0,'Flight through Caverns'),
 (8082,0,15,34905,0,0,0,0,0,0,0,0,0,0,0,0,'Stealth Flight'),
 (8100,0,15,35066,0,0,0,0,0,0,0,0,0,0,0,0,'Taxi - Hellfire Peninsula - Beach Head to Shatter Point'),
