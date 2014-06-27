@@ -679,7 +679,13 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000005572,'$N. These shells tell me much, but I fear many more questions are now raised...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005573,'Onu studies the parchment from the Twilight Tome...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
 (2000005574,'Onu is struck by unleashed magic!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
-(2000005575,'Hmm...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL);
+(2000005575,'Hmm...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000005639,'Horseman rise...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'horseman say_summon_horseman_1'),
+(2000005640,'Your time is night...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'horseman say_summon_horseman_2'),
+(2000005641,'You felt death once...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'horseman say_summon_horseman_3'),
+(2000005642,'Now, know demise!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'horseman say_summon_horseman_4'),
+(2000005643,'It is over, your search is done! Let fate choose now, the righteous one.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,11961,1,0,0,'horseman say_intro'),
+(2000005644,'%s laughs.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,11965,2,0,0,'horseman emote_laugh');
 /*!40000 ALTER TABLE `db_script_string` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
