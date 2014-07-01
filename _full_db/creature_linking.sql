@@ -48,6 +48,13 @@ CREATE TABLE `creature_linking` (
 
 LOCK TABLES `creature_linking` WRITE;
 /*!40000 ALTER TABLE `creature_linking` DISABLE KEYS */;
+INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+(73640,73595,518),
+(73641,73596,518),
+(73642,73597,518),
+(73644,73599,518),
+(73645,73602,518),
+(73646,73601,518);
 /*!40000 ALTER TABLE `creature_linking` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
