@@ -204,6 +204,7 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 (8531,0,15,26796,0,0,0,0,0,0,0,0,0,0,0,0,'cast Spellfire Tailoring'),
 (8532,0,15,26800,0,0,0,0,0,0,0,0,0,0,0,0,'cast Shadoweave Tailoring'),
 (8617,0,8,22932,0,0,0,0,0,0,0,0,0,0,0,0,'Kill credit for quest 10980'),
+(8671,0,15,40958,0,0,0,4,0,0,0,0,0,0,0,0,''),
 (8672,0,15,40964,0,0,0,4,0,0,0,0,0,0,0,0,'Fel Crystalforge: Create 1 Flask'),
 (8697,0,7,11082,0,0,0,0,0,0,0,0,0,0,0,0,'quest 11082 explored'),
 (8697,0,15,41121,0,0,0,0,0,0,0,0,0,0,0,0,'Giving a Hand'),
