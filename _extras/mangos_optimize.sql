@@ -131,7 +131,7 @@ ALTER TABLE `skill_extra_item_template` ORDER BY `spellId` ASC;
 ALTER TABLE `skill_fishing_base_level` ORDER BY `entry` ASC;
 ALTER TABLE `skinning_loot_template` ORDER BY `entry` ASC;
 ALTER TABLE `spell_affect` ORDER BY `entry` ASC;
-ALTER TABLE `spell_area` ORDER BY `area` ASC;
+ALTER TABLE `spell_area`  ORDER BY `spell` ASC, `area` ASC;
 ALTER TABLE `spell_bonus_data` ORDER BY `entry` ASC;
 ALTER TABLE `spell_chain` ORDER BY `spell_id` ASC;
 ALTER TABLE `spell_elixir` ORDER BY `entry` ASC;
