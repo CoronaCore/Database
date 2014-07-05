@@ -49,6 +49,9 @@ CREATE TABLE `creature_linking` (
 LOCK TABLES `creature_linking` WRITE;
 /*!40000 ALTER TABLE `creature_linking` DISABLE KEYS */;
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+(69081,69079,518),
+(69091,69092,518),
+(69097,69096,518),
 (70887,76415,515),
 (70888,76415,515),
 (73640,73595,518),
