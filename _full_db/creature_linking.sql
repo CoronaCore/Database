@@ -49,6 +49,11 @@ CREATE TABLE `creature_linking` (
 LOCK TABLES `creature_linking` WRITE;
 /*!40000 ALTER TABLE `creature_linking` DISABLE KEYS */;
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+(62065,62012,515),
+(62066,62012,515),
+(62068,99337,515),
+(62088,62083,515),
+(62089,62083,515),
 (69081,69079,518),
 (69091,69092,518),
 (69097,69096,518),
@@ -66,6 +71,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (76123,76115,518),
 (76127,76119,518),
 (76128,76120,518),
+(99338,99337,515),
 (132955,69096,518),
 (132956,69096,518);
 /*!40000 ALTER TABLE `creature_linking` ENABLE KEYS */;
