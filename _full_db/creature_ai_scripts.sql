@@ -4585,7 +4585,6 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (390011,3900,14,0,100,1,400,40,16000,21000,11,913,6,1,0,0,0,0,0,0,0,0,'Caedakar the Vicious - Cast Healing Wave on Friendlies'),
 (390012,3900,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Caedakar the Vicious - Set Phase to 0 on Evade'),
 (390101,3901,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Illiyana - Flee at 15% HP'),
-(390201,3902,0,0,100,1,1000,1000,2200,2900,11,6350,1,0,0,0,0,0,0,0,0,0,'Searing Totem II - Cast Attack'),
 (391401,3914,0,0,100,3,1300,14600,14200,36000,11,7295,1,0,0,0,0,0,0,0,0,0,'Rethilgore - Cast Soul Drain'),
 (391402,3914,4,0,100,2,0,0,0,0,34,2,1,0,0,0,0,0,0,0,0,0,'Rethilgore - Set Instance Data on Aggro'),
 (391403,3914,6,0,100,2,0,0,0,0,34,2,3,0,0,0,0,0,0,0,0,0,'Rethilgore - Set Instance Data on Death'),
@@ -8840,9 +8839,9 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (828207,8282,9,13,100,0,5,15,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Highlord Mastrogonde - Prevent Combat Movement at 15 Yards (Phase 1)'),
 (828208,8282,9,13,100,0,0,5,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Highlord Mastrogonde - Start Combat Movement Below 5 Yards (Phase 1)'),
 (828209,8282,3,11,100,1,100,15,100,100,23,-1,0,0,0,0,0,0,0,0,0,0,'Highlord Mastrogonde - Set Phase 1 when Mana is above 15% (Phase 2)'),
-(828210,8282,9,0,100,1,0,30,15000,18000,11,13323,5,1,0,0,0,0,0,0,0,0,'Highlord Mastrogonde - Cast Polymorph');
+(828210,8282,9,0,100,1,0,30,15000,18000,11,13323,5,1,0,0,0,0,0,0,0,0,'Highlord Mastrogonde - Cast Polymorph'),
+(828211,8282,2,0,100,1,50,0,50000,70000,11,11974,0,1,0,0,0,0,0,0,0,0,'Highlord Mastrogonde - Cast Power Word: Shield at 50% HP');
 INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
-(828211,8282,2,0,100,1,50,0,50000,70000,11,11974,0,1,0,0,0,0,0,0,0,0,'Highlord Mastrogonde - Cast Power Word: Shield at 50% HP'),
 (828212,8282,2,0,100,0,15,0,0,0,22,3,0,0,0,0,0,0,0,0,0,0,'Highlord Mastrogonde - Set Phase 3 at 15% HP'),
 (828213,8282,2,7,100,0,15,0,0,0,21,1,0,0,25,0,0,0,1,-47,0,0,'Highlord Mastrogonde - Start Combat Movement and Flee at 15% HP (Phase 3)'),
 (828214,8282,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Highlord Mastrogonde - Set Phase to 0 on Evade'),
@@ -15857,10 +15856,6 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1817205,18172,6,0,10,6,0,0,0,0,1,-1290,-1291,0,0,0,0,0,0,0,0,0,'Infinite Saboteur - Random Say on Death'),
 (1817401,18174,4,0,100,0,0,0,0,0,12,16222,1,300000,0,0,0,0,0,0,0,0,'Initiate Colin - Summon Silvermoon City Guardian on Aggro'),
 (1817501,18175,4,0,100,0,0,0,0,0,12,16222,1,300000,0,0,0,0,0,0,0,0,'Initiate Emeline - Summon Silvermoon City Guardian on Aggro'),
-(1817601,18176,1,0,100,6,0,0,0,0,20,0,0,0,21,0,0,0,0,0,0,0,'Mennu Earthgrab Totem - Prevent Combat Movement and Prevent Melee on Spawn'),
-(1817602,18176,0,0,100,7,1000,4000,16000,18000,11,20654,4,0,0,0,0,0,0,0,0,0,'Mennu Earthgrab Totem - Cast Snare'),
-(1817701,18177,1,0,100,6,0,0,0,0,20,0,0,0,21,0,0,0,0,0,0,0,'Mennu Stoneskin Totem - Prevent Combat Movement and Prevent Melee on Spawn'),
-(1817702,18177,0,0,100,6,1000,1000,0,0,11,31986,0,0,0,0,0,0,0,0,0,0,'Mennu Stoneskin Totem - Cast Stoneskin'),
 (1817901,18179,1,0,100,6,0,0,0,0,20,0,0,0,21,0,0,0,0,0,0,0,'Mennu Fire Nova Totem - Prevent Combat Movement and Prevent Melee on Spawn'),
 (1817902,18179,0,0,100,6,5000,5000,0,0,11,30687,1,0,0,0,0,0,0,0,0,0,'Mennu Fire Nova Totem - Cast Explode and Self Kill'),
 (1817903,18179,8,0,100,7,0,127,0,0,11,30687,1,0,0,0,0,0,0,0,0,0,'Mennu Fire Nova Totem - Cast Explode When Hit By Spell and Self Kill'),
@@ -17357,13 +17352,13 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1964306,19643,9,5,100,0,25,80,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Sunfury Astromancer - Start Combat Movement at 25 Yards (Phase 1)'),
 (1964307,19643,9,5,100,0,5,15,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Sunfury Astromancer - Prevent Combat Movement at 15 Yards (Phase 1)'),
 (1964308,19643,9,5,100,0,0,5,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Sunfury Astromancer - Start Combat Movement Below 5 Yards (Phase 1)'),
-(1964309,19643,3,3,100,1,100,15,100,100,23,-1,0,0,0,0,0,0,0,0,0,0,'Sunfury Astromancer - Set Phase 1 when Mana is above 15% (Phase 2)');
-INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
+(1964309,19643,3,3,100,1,100,15,100,100,23,-1,0,0,0,0,0,0,0,0,0,0,'Sunfury Astromancer - Set Phase 1 when Mana is above 15% (Phase 2)'),
 (1964310,19643,9,0,100,1,0,30,12000,16000,11,35914,4,1,0,0,0,0,0,0,0,0,'Sunfury Astromancer - Cast Astral Focus'),
 (1964311,19643,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Sunfury Astromancer - Set Phase to 0 on Evade'),
 (1965701,19657,1,0,100,0,0,0,0,0,21,0,0,0,22,0,0,0,0,0,0,0,'Summoner Kanthin - Prevent Combat Movement and Set Phase to 0 on Spawn'),
 (1965702,19657,4,0,100,0,0,0,0,0,11,19816,1,0,23,1,0,0,0,0,0,0,'Summoner Kanthin - Cast Fireball and Set Phase 1 on Aggro'),
-(1965703,19657,9,5,100,1,0,40,3400,4800,11,19816,1,0,0,0,0,0,0,0,0,0,'Summoner Kanthin - Cast Fireball (Phase 1)'),
+(1965703,19657,9,5,100,1,0,40,3400,4800,11,19816,1,0,0,0,0,0,0,0,0,0,'Summoner Kanthin - Cast Fireball (Phase 1)');
+INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
 (1965704,19657,3,5,100,0,7,0,0,0,21,1,0,0,23,1,0,0,0,0,0,0,'Summoner Kanthin - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 (1965705,19657,9,5,100,0,35,80,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Summoner Kanthin - Start Combat Movement at 35 Yards (Phase 1)'),
 (1965706,19657,9,5,100,0,5,15,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Summoner Kanthin - Prevent Combat Movement at 15 Yards (Phase 1)'),
@@ -17883,7 +17878,6 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (2020709,20207,2,0,100,0,15,0,0,0,23,1,0,0,0,0,0,0,0,0,0,0,'Sunfury Bowman - Set Phase 2 at 15% HP'),
 (2020710,20207,2,3,100,0,15,0,0,0,21,1,0,0,25,0,0,0,1,-47,0,0,'Sunfury Bowman - Start Combat Movement and Flee at 15% HP (Phase 2)'),
 (2020711,20207,7,0,100,0,0,0,0,0,22,1,0,0,40,1,0,0,0,0,0,0,'Sunfury Bowman - Set Phase 1 and Set Melee Weapon Model on Evade'),
-(2020801,20208,0,0,100,7,1000,1000,6000,6000,11,34977,0,0,0,0,0,0,0,0,0,0,'Mennu Healing Ward - Cast Mennu\'s Healing Ward'),
 (2021001,20210,4,0,100,0,0,0,0,0,11,36576,0,0,0,0,0,0,0,0,0,0,'Shaleskin Flayer - Cast Shaleskin on Aggro'),
 (2021501,20215,0,0,100,1,5000,8500,7400,12500,11,36039,1,0,0,0,0,0,0,0,0,0,'Pentatharon - Cast Carrion Swarm'),
 (2021601,20216,0,0,100,1,20000,20000,20000,25000,11,38771,0,1,0,0,0,0,0,0,0,0,'Grulloc - Cast Burning Rage'),
