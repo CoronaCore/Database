@@ -200,6 +200,7 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 (8371,0,17,30659,1,0,0,0,0,0,0,0,0,0,0,0,'give Kagrosh\'s Pack'),
 (8396,0,7,10646,0,0,0,0,0,0,0,0,0,0,0,0,'quest 10646 explored'),
 (8429,0,7,10682,5,0,0,0,0,0,0,0,0,0,0,0,'complete quest 10682'),
+(8439,0,7,10722,0,0,0,0,0,0,0,0,0,0,0,0,'give quest credits 10722'),
 (8497,0,7,10814,0,0,0,0,0,0,0,0,0,0,0,0,'quest 10814 explored'),
 (8530,0,15,26799,0,0,0,0,0,0,0,0,0,0,0,0,'cast Mooncloth Tailoring'),
 (8531,0,15,26796,0,0,0,0,0,0,0,0,0,0,0,0,'cast Spellfire Tailoring'),
