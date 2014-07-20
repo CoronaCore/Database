@@ -1,0 +1,24 @@
+language: mysql
+
+# reduce clone time by only getting the latest commit and not the whole history (default for travis is 100)
+git:
+  depth: 1
+
+# only run travis on the master branch
+# branches:
+#   only:
+#     - master
+
+mysql: &mysql
+  adapter: mysql2
+  username: root
+  password: root
+
+before_script:
+  - cd _tools
+  - chmod 777 make_full_db.sh
+  - ./make_full_db.sh
+  - mysql -e 'create database mangos;'
+
+script:
+  - mysql -u root mangos < full_db.sql
