@@ -1,4 +1,4 @@
-# ![logo](http://www.imgbox.de/users/public/images/FCVDJWsmbn.png)
+# ![logo](http://www.imgbox.de/users/public/images/FCVDJWsmbn.png) ![Build status](https://api.travis-ci.org/CoronaCore/OneDatabase.png)
 
 License
 -------
