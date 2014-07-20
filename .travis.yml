@@ -9,11 +9,6 @@ git:
 #   only:
 #     - master
 
-mysql: &mysql
-  adapter: mysql2
-  username: root
-  password: root
-
 before_script:
   - cd _tools
   - chmod 777 make_full_db.sh
