@@ -700,6 +700,7 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000005473,'Waste no time, fool! Use our power to kill those what stand in our way! Destroy Krasius before you are subdued!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005474,'Release me immediatley or face my wrath!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005475,'This cell won\'t hold me for long. I will have Illidan\'s head one way or another.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000005476,'Consider this a warm up!  Your real training will be far harsher!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005477,'Wit a reward like dis, how could they refuse, mon?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005478,'Hide! Hide before they see you! Back up!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,4,0,0,NULL),
 (2000005487,'The time to strike is at hand. Terminate Icarius.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,4,0,0,NULL),
