@@ -564,7 +564,7 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000005318,'Aaahh... Very good. Now scat!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005319,'As you wish sir.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005320,'Can I go collect more rocks for my necklace, Papa?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
-(2000005321,'Yes you may, $N. But do not stray too far from home.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000005321,'Yes you may, Okla. But do not stray too far from home.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005322,'Dabu! I will be careful Papa!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005323,'Ooohh... This rock is nice and colorful. Let\'s see if I can find more like it...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005324,'Hmm... That rock is nice, but too small.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
