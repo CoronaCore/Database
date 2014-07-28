@@ -2919,7 +2919,9 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 (138391,1),
 (138392,1),
 (138393,1),
-(138394,1);
+(138394,1),
+(140320,7),
+(140321,7);
 /*!40000 ALTER TABLE `game_event_creature` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
