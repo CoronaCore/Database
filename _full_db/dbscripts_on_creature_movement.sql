@@ -594,6 +594,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2399501,31,0,0,0,23579,10,1,2000005017,0,0,0,0,0,0,0,''),
 (2399501,31,1,6,0,0,0,0,0,0,0,0,0,0,0,0,''),
 (6883501,0,0,1,0,0,0,0,2000005302,2000005303,0,0,0,0,0,0,'Shattrath Saul - Perry Gatner Event Announce'),
+(9659501,0,1,36,0,0,0,0,43,54,0,0,0,0,0,0,'Shattered Sun Trainee - Practice Fighting Emotes'),
 (9710301,0,0,1,0,0,0,0,2000005304,2000005305,0,0,0,0,0,0,'Shattrath Saul - L70ETC Event Announce'),
 (9711001,0,25,1,0,0,0,0,0,0,0,0,0,0,0,0,'Defias Rioter - Set Run Mode On'),
 (9711002,0,16,10836,0,0,0,0,0,0,0,0,0,0,0,0,'Defias Rioter - Open Cell Door Sound'),
