@@ -59,6 +59,7 @@ LOCK TABLES `spell_template` WRITE;
 /*!40000 ALTER TABLE `spell_template` DISABLE KEYS */;
 INSERT INTO `spell_template` (`id`, `proc_flags`, `proc_chance`, `duration_index`, `effect0`, `effect0_implicit_target_a`, `effect0_radius_idx`, `effect0_apply_aura_name`, `effect0_misc_value`, `effect0_misc_value_b`, `effect0_trigger_spell`, `comments`) VALUES
 (21387,40,15,21,6,1,0,42,0,0,21388,'Melt-Weapon trigger aura related used by Ragnaros'),
+(21883,384,101,225,76,22,0,0,178904,0,0,'Summon Healed Celebrian Vine'),
 (23363,0,101,21,76,18,0,0,179804,0,0,'Summon Drakonid Corpse Trigger'),
 (25192,0,101,21,76,18,0,0,180619,0,0,'Summon Ossirian Crystal'),
 (26133,0,101,21,76,18,0,0,180795,0,0,'Summon Sandworm Base'),

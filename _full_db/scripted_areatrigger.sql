@@ -83,6 +83,7 @@ INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES
 (4033,'at_stomach_cthun'),
 (4034,'at_stomach_cthun'),
 (4047,'at_temple_ahnqiraj'),
+(4052,'at_temple_ahnqiraj'),
 (4112,'at_naxxramas'),
 (4113,'at_naxxramas'),
 (4156,'at_naxxramas'),
