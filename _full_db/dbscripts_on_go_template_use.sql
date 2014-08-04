@@ -176,7 +176,8 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (185156,1,8,22112,0,0,0,0,0,0,0,0,0,0,0,0,'quest 10866: at least make completable'),
 (185547,1,10,22993,60000,0,0,8,0,0,0,0,0,0,0,0,'summon Guardian of the Falcon'),
 (185551,1,10,22992,60000,0,0,8,0,0,0,0,0,0,0,0,'summon Guardian of the Hawk'),
-(185553,1,10,22994,60000,0,0,8,0,0,0,0,0,0,0,0,'summon Guardian of the Eagle');
+(185553,1,10,22994,60000,0,0,8,0,0,0,0,0,0,0,0,'summon Guardian of the Eagle'),
+(186432,17,27,8,0,0,0,6,0,0,0,0,0,0,0,0,'remove no_interact flag');
 /*!40000 ALTER TABLE `dbscripts_on_go_template_use` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

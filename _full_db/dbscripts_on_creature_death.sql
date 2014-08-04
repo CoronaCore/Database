@@ -67,7 +67,9 @@ INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`,
 (20427,5,15,36781,0,21332,100,32,0,0,0,0,0,0,0,0,'cast Despawn Spirit Hunter'),
 (20427,6,14,36620,0,0,0,6,0,0,0,0,0,0,0,0,'remove Spirit Hunter aura'),
 (20427,6,18,0,0,21332,100,32,0,0,0,0,0,0,0,0,'despawn spirit hunter'),
-(21419,10,23,20577,0,0,0,8,0,0,0,0,0,0,0,0,'temp model');
+(21419,10,23,20577,0,0,0,8,0,0,0,0,0,0,0,0,'temp model'),
+(23899,0,0,0,0,23900,100,0,2000005637,0,0,0,0,0,0,0,'yell_tethyr_dead'),
+(23899,10,0,0,0,23900,100,0,2000005638,0,0,0,0,0,0,0,'yell_tethyr_dead');
 /*!40000 ALTER TABLE `dbscripts_on_creature_death` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
