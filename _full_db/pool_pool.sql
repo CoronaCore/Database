@@ -41,7 +41,7 @@ CREATE TABLE `pool_pool` (
   `description` varchar(255) CHARACTER SET utf8 NOT NULL,
   PRIMARY KEY (`pool_id`),
   KEY `pool_idx` (`mother_pool`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

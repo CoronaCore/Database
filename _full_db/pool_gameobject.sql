@@ -41,7 +41,7 @@ CREATE TABLE `pool_gameobject` (
   `description` varchar(255) CHARACTER SET utf8 NOT NULL,
   PRIMARY KEY (`guid`),
   KEY `pool_idx` (`pool_entry`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
