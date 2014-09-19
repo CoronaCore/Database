@@ -6250,7 +6250,10 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (15010,1,'Eye of Storm: Blood Elf Tower power up buff'),
 (15011,1,'Eye of Storm: Fel Reaver Ruins Tower power up buff'),
 (15012,1,'Eye of Storm: Mage Tower power up buff'),
-(15013,1,'Eye of Storm: Dreanei Ruins Tower power up buff');
+(15013,1,'Eye of Storm: Dreanei Ruins Tower power up buff'),
+(25427,4,'Netherwing eggs - Dragonmaw fortrees'),
+(25428,7,'Netherwing eggs - Ledge'),
+(25429,5,'Netherwing eggs - Dragonmaw fortrees');
 /*!40000 ALTER TABLE `pool_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
