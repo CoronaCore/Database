@@ -498,6 +498,8 @@ INSERT INTO `creature_ai_texts` (`entry`, `content_default`, `content_loc1`, `co
 (-654,'Snivvle is here! Snivvle claims the Coldtooth Mine!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'11677'),
 (-649,'%s goes into a drunken rage!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'14322'),
 (-648,'%s lets out a deep roar, alerting nearby allies and becoming enraged!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'Dire Maul Guards'),
+(-642,'Listen carefully, for the lord of Blackrock will surely destroy you, should you not be prepared.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Vaelan greetings'),
+(-641,'At last: one among you is worthy of my knowledge. Worry not: I have probed your thoughts, no harm will come to you.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Vaelan greetings'),
 (-640,'Ah, damn it all! Clever trap. Too bad you\'ll never live to tell the tale...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'21409'),
 (-639,'The void...beckons.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,11255,1,0,0,'20870'),
 (-638,'No...more...life.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,11252,1,0,0,'20870'),
