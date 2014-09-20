@@ -21,7 +21,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags&~2048 WHERE UnitFlags&2048=2048
 UPDATE creature_template SET UnitFlags=UnitFlags&~524288 WHERE UnitFlags&524288=524288;
 UPDATE creature_template SET UnitFlags=UnitFlags&~67108864 WHERE UnitFlags&67108864=67108864;
 UPDATE creature_template SET UnitFlags=UnitFlags&~8388608 WHERE UnitFlags&8388608=8388608;
-UPDATE creature, creature_template SET creature.curhealth=creature_template.MinLevelHealth,creature.curmana=creature_template.MinLevelMana WHERE creature.id=creature_template.entry and creature_template.RegenerateStats = '1';
+UPDATE creature, creature_template SET creature.curhealth = creature_template.MinLevelHealth,creature.curmana = creature_template.MinLevelMana WHERE creature.id = creature_template.entry and creature_template.RegenerateStats = 1;
 UPDATE creature_template SET dynamicflags = dynamicflags &~ 223;
 UPDATE creature_template SET NpcFlags = NpcFlags&~16777216; -- UNIT_NPC_FLAG_SPELLCLICK
 UPDATE creature_template SET ModelId2 = 0 WHERE ModelId1 = ModelId2;
