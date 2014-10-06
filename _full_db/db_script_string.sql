@@ -841,6 +841,21 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000005664,'I\'m listening..',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005665,'Do not beat the Coilsssskaarrr commander anymore, orc! I will tell you! The cipherrr... It is hidden in one of the chests at Coilssskarrr Point... The naga there hold the keysss...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005666,'COILSSSKARRR!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000005698,'Step aside lest I add you as another adornment to my armor. Your leader and I have matters to attend...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,397,NULL),
+(2000005699,'%s smiles.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
+(2000005700,'I thought you would see it my way...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,153,NULL),
+(2000005701,'Overlord Mor\'ghor, I presume... A pleasure to finally make your acquaintance.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,2,NULL),
+(2000005702,'I am Lady Sinestra.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000005703,'I will not drag this out any further than it needs, Lady Sinestra. You have bent my ear, now tell me what it is that you want from Dragonmaw.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000005704,'You have no doubt heard about Nefarian\'s failures on Azeroth... While he has fallen, the experiments continue. My master... He continues the work that his progeny began.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000005705,'The... The master? He lives?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,5,NULL),
+(2000005706,'%s nods.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,273,NULL),
+(2000005707,'You were once a chief lieutenant, Mor\'ghor. Your work in Grim Batol is not easily forgotten.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000005708,'Now... We need the eggs that you recover. The Netherwing eggs. They are, after all, a product of the master. We will pay whatever price that you ask.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000005709,'%s stammers.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
+(2000005710,'Ye... Yes, yes... Of course. We need only the crystals and ore from this place. There is... We will need mounts.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000005711,'The master will be most pleased with this news. The Black Dragonflight will provide you all that you ask. You will be allowed to ride upon the backs of our drakes as needed.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000005712,'I thank you for your graciousness, Mor\'ghor. I must now take my leave.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
 (2000005755,'Grunting, %s turns away from the wanted poster, returning to his warm spot by the fire.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
 (2000005756,'%s begins to read the wanted poster.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
 (2000005757,'I say we fire it. Cut the rope.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
@@ -851,7 +866,8 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000005762,'Ah! We can tell him Hagash stumbled into it and fired it accidentally!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,25,NULL),
 (2000005763,'I\'m blind, you stupid sow-spawn, not deaf. Don\'t even think about it.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
 (2000005764,'%s sighs.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
-(2000005765,'There they are!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL);
+(2000005765,'There they are!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000005766,'Thank you, kind soul. You have freed me from the watery prison of Coilskar but many more are being held prisoner nearby. Will you assist me in freeing them as well?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL);
 /*!40000 ALTER TABLE `db_script_string` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
