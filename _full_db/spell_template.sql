@@ -63,6 +63,7 @@ INSERT INTO `spell_template` (`id`, `proc_flags`, `proc_chance`, `duration_index
 (23363,0,101,21,76,18,0,0,179804,0,0,'Summon Drakonid Corpse Trigger'),
 (25192,0,101,21,76,18,0,0,180619,0,0,'Summon Ossirian Crystal'),
 (26133,0,101,21,76,18,0,0,180795,0,0,'Summon Sandworm Base'),
+(33242,0,101,21,28,18,7,0,19259,64,0,'summon Infernal Invader'),
 (34810,0,101,21,28,42,8,0,20083,64,0,'Summon Summoned Bloodwarder Mender behind of the caster'),
 (34817,0,101,21,28,44,8,0,20078,64,0,'Summon Summoned Bloodwarder Reservist right of the caster'),
 (34818,0,101,21,28,43,8,0,20078,64,0,'Summon Summoned Bloodwarder Reservist left of the caster'),
