@@ -747,7 +747,11 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (9711002,0,16,10836,0,0,0,0,0,0,0,0,0,0,0,0,'Defias Rioter - Open Cell Door Sound'),
 (9711003,0,16,10837,0,0,0,0,0,0,0,0,0,0,0,0,'Defias Rioter - Close Cell Door Sound'),
 (9838901,0,18,744000,0,0,0,0,0,0,0,0,0,0,0,0,'[DND] L70ETC Drums - World\'s End Tavern Despawn Drums on Drummer Spawn'),
-(9839501,0,18,744000,0,0,0,0,0,0,0,0,0,0,0,0,'[DND] L70ETC Drums - Grim Guzzler Despawn Drums on Drummer Spawn');
+(9839501,0,18,744000,0,0,0,0,0,0,0,0,0,0,0,0,'[DND] L70ETC Drums - Grim Guzzler Despawn Drums on Drummer Spawn'),
+(1824801,0,0,0,0,0,0,0,2000005755,0,0,0,0,0,0,0,''),
+(1824802,0,28,1,0,0,0,0,0,0,0,0,0,0,0,0,'STATE_SIT'),
+(1824802,235,28,0,0,0,0,0,0,0,0,0,0,0,0,0,'STATE_STAND'),
+(1824803,0,0,0,0,0,0,0,2000005756,0,0,0,0,0,0,0,'');
 /*!40000 ALTER TABLE `dbscripts_on_creature_movement` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
