@@ -301,7 +301,12 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000000333,'Hmm, it could be that meddler Shaw. I will see what I can discover. Be off with you. I\'ll contact you again soon.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
 (2000000334,'Very well. I will return then.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000335,'That\'s it! That\'s what you were waiting for! KILL THEM!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000000336,'It\'s working! Ghabar will be pleased to hear the news.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000344,'INCOMING! Do not let them through! Focus fire! NOW, NOW, NOW!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,5,NULL),
+(2000000345,'The power of the Tear of the Moons is mine! Mine I say!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,5,NULL),
+(2000000346,'%s begins to rub the Tear of the Moons.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
+(2000000347,'Power! Glorious power!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,15,NULL),
+(2000000348,'%s begins to make strange grunting noises. The Tear of the Moons drops to the ground and shatters.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
 (2000001022,'No,not so.What happened here?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',0,0,0,0,NULL),
 (2000001023,'Metal lost its magic. I could make out his weapon, but it will not differ from the conventional blade.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',0,0,0,0,NULL),
 (2000001086,'My gratitude knows no bounds, $N. Finally I was able to leave the tower and freed from the shackles of bad magic, Kael!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Моя благодарность не знает границ, $N. Наконец-то я смогу покинуть эту башню и освободиться от оков скверной магии Келя!',0,0,0,0,NULL),
@@ -402,7 +407,7 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000005086,'Drink this, it will help.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005087,'You\'re going to be just fine.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005088,'Wait, $N!!! It looks like we\'re going to need some help here...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
-(2000005089,'Go swiftly $N. My fate is in your hands.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000005089,'Go swiftly, $N. My fate is in your hands.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005090,'Honor your heroes! On this day, they have dealt a great blow against one of our most hated enemies! The false Warchief, Rend Blackhand, has fallen! ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,6,0,0,NULL),
 (2000005091,'Be bathed in my power! Drink in my might! Battle for the glory of the Horde!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,6,0,0,NULL),
 (2000005092,'The deeds are mine, brother! Soon you shall be out of my way for good!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,NULL),
@@ -888,6 +893,7 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000005710,'Ye... Yes, yes... Of course. We need only the crystals and ore from this place. There is... We will need mounts.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
 (2000005711,'The master will be most pleased with this news. The Black Dragonflight will provide you all that you ask. You will be allowed to ride upon the backs of our drakes as needed.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
 (2000005712,'I thank you for your graciousness, Mor\'ghor. I must now take my leave.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000005754,'Now to begin the repairs.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000005755,'Grunting, %s turns away from the wanted poster, returning to his warm spot by the fire.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
 (2000005756,'%s begins to read the wanted poster.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
 (2000005757,'I say we fire it. Cut the rope.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
@@ -899,7 +905,11 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000005763,'I\'m blind, you stupid sow-spawn, not deaf. Don\'t even think about it.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
 (2000005764,'%s sighs.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
 (2000005765,'There they are!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
-(2000005766,'Thank you, kind soul. You have freed me from the watery prison of Coilskar but many more are being held prisoner nearby. Will you assist me in freeing them as well?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL);
+(2000005766,'Thank you, kind soul. You have freed me from the watery prison of Coilskar but many more are being held prisoner nearby. Will you assist me in freeing them as well?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000005776,'I thank you, $N. And my brother thanks you.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,2,NULL),
+(2000005777,'%s listens to Sigilbringer\'s report...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
+(2000005778,'What?? The Burning Blade is spreading! We must investigate!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,5,NULL),
+(2000005779,'%s smashes the dead, twisted claw. ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL);
 /*!40000 ALTER TABLE `db_script_string` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
