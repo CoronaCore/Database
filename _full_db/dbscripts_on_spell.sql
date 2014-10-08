@@ -127,6 +127,7 @@ INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalon
 (38129,0,15,38130,0,0,0,0,0,0,0,0,0,0,0,0,''),
 (38223,0,8,22051,1,0,0,0,0,0,0,0,0,0,0,0,'Quest Credit: Crazed Colossus'),
 (39398,0,18,30000,0,0,0,6,0,0,0,0,0,0,0,0,'despawn self'),
+(39810,2,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'despawn'),
 (39844,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,'quest 10223 kill credit'),
 (39844,1,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'despawn 10223 trigger despawn'),
 (42323,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,'create from quest_template'),
