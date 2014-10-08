@@ -52,6 +52,7 @@ LOCK TABLES `creature_linking_template` WRITE;
 /*!40000 ALTER TABLE `creature_linking_template` DISABLE KEYS */;
 INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (1725,36,644,1,0),
+(1755,0,1754,3,100),
 (2532,0,2533,656,0),
 (2946,1,2433,3,0),
 (5277,109,5709,1,0),
