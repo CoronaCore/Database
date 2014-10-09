@@ -215,6 +215,7 @@ INSERT INTO `areatrigger_teleport` (`id`, `name`, `required_level`, `required_it
 (4561,'Invasion Point, Cataclysm (Return Point)',0,0,0,0,0,0,0,530,-3278.63,2831.31,123.01,1.56),
 (4562,'Invasion Point, Cataclysm (Return Point)',0,0,0,0,0,0,0,530,-3278.63,2831.31,123.01,1.56),
 (4598,'Black Temple (Entrance)',70,0,0,0,0,0,0,564,96.4462,1002.35,-86.9984,6.15675),
+(4612,'The Botanica (Atrium Exit)',0,0,0,0,0,0,0,530,3409.85,1486.26,182.837,2.53073),
 (4619,'Black Temple (Exit)',0,0,0,0,0,0,0,530,-3653.51,317.493,36.1671,6.24941),
 (4738,'Zul\'Aman (Entrance)',68,0,0,0,0,0,0,568,120.7,1776,43.46,4.7713),
 (4739,'Zul\'Aman (Exit)',0,0,0,0,0,0,0,530,6851.5,-7997.68,192.36,1.56688),
