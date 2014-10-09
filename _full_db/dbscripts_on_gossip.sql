@@ -226,6 +226,8 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 (8697,0,15,41121,0,0,0,0,0,0,0,0,0,0,0,0,'Giving a Hand'),
 (8718,0,15,41278,0,0,0,6,0,0,0,0,0,0,0,0,'Taxi - Skyguard Outpost to Skettis'),
 (8719,0,15,41279,0,0,0,6,0,0,0,0,0,0,0,0,'Taxi - Skettis to Skyguard Outpost'),
+(8725,0,29,3,2,0,0,0,0,0,0,0,0,0,0,0,'23093 - npc_flag removed'),
+(8725,1,20,2,0,0,0,0,0,0,0,0,0,0,0,0,'movement chenged to 2:waypoint'),
 (8761,0,15,42169,0,0,0,0,0,0,0,0,0,0,0,0,'Apply Aura: Invisibility Detection'),
 (8762,0,0,0,0,23602,10,0,2000000314,2000000315,2000000316,0,0,0,0,0,'Say'),
 (8762,0,22,1883,1,23602,10,0,0,0,0,0,0,0,0,0,'change faction'),
