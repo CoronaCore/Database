@@ -63,6 +63,8 @@ LOCK TABLES `dbscripts_on_spell` WRITE;
 /*!40000 ALTER TABLE `dbscripts_on_spell` DISABLE KEYS */;
 INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (8593,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,'create from quest_template'),
+(8913,2,10,24782,120000,1200,50,7,0,0,0,0,0,0,0,0,''),
+(8913,3,18,0,0,1200,50,7,0,0,0,0,0,0,0,0,''),
 (11365,0,18,1000,0,0,0,0,0,0,0,0,0,0,0,0,'despawn self'),
 (16378,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,'create from quest_template'),
 (17166,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,'create from quest_template'),
