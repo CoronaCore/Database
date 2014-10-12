@@ -56,12 +56,12 @@ LOCK TABLES `battleground_template` WRITE;
 /*!40000 ALTER TABLE `battleground_template` DISABLE KEYS */;
 INSERT INTO `battleground_template` (`id`, `MinPlayersPerTeam`, `MaxPlayersPerTeam`, `MinLvl`, `MaxLvl`, `AllianceStartLoc`, `AllianceStartO`, `HordeStartLoc`, `HordeStartO`) VALUES
 (1,20,40,51,70,611,2.72532,610,2.27452),
-(2,5,10,10,70,769,3.14159,770,3.14159),
-(3,8,15,20,70,890,3.40156,889,0.263892),
+(2,5,10,10,70,769,3.14159,770,0.00391),
+(3,8,15,20,70,890,3.91992,889,0.88828),
 (4,0,2,10,70,929,0,936,3.14159),
 (5,0,2,10,70,939,0,940,3.14159),
 (6,0,2,10,70,0,0,0,0),
-(7,8,15,61,70,1103,3.40156,1104,0.263892),
+(7,8,15,61,70,1103,3.22092,1104,0.01649),
 (8,0,2,10,70,1258,0,1259,3.14159);
 /*!40000 ALTER TABLE `battleground_template` ENABLE KEYS */;
 UNLOCK TABLES;
