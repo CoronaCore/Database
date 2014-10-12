@@ -63,6 +63,8 @@ LOCK TABLES `dbscripts_on_creature_death` WRITE;
 /*!40000 ALTER TABLE `dbscripts_on_creature_death` DISABLE KEYS */;
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (3421,1,23,0,0,0,0,0,0,0,0,0,0,0,0,0,'demorph'),
+(19554,0,0,0,0,20985,50,0,2000005784,0,0,0,0,0,0,0,'Captain Saeed - say quest complete'),
+(19554,10,18,0,0,20985,50,7,0,0,0,0,0,0,0,0,'Captain Saeed - despawn self'),
 (20427,0,0,0,0,21332,100,32,2000005557,0,0,0,0,0,0,0,'say veneratus epilogue 1'),
 (20427,3,0,0,0,21332,100,32,2000005558,0,0,0,0,0,0,0,'say veneratus epilogue 2'),
 (20427,5,15,36781,0,21332,100,32,0,0,0,0,0,0,0,0,'cast Despawn Spirit Hunter'),
