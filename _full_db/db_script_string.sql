@@ -275,6 +275,7 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000000256,'Drink this, you blue brute! Disobey me and I promise you a slow, painful death!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,25,NULL),
 (2000000257,'I pity you Forsaken, Your soul is devoid of light.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,35,0,NULL),
 (2000000258,'Hmmm... looks like I\'m going to need a new test subject.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000000259,'You have done well, $N. Continue your search for knowledge, and remember the history you have learned.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
 (2000000276,'Treacherous whelp! Sironas will destroy you and your people!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000284,'ACK! That\'s the worst thing I\'ve ever tasted! I wouldn\'t let my ram drink that!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000297,'%s picks up the naga flag.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
