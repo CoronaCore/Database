@@ -2533,6 +2533,7 @@ INSERT INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`
 (3691,0,0,1,1,0,0,NULL),
 (3692,0,1,1,16,0,0,NULL),
 (3693,0,0,1,16,0,0,NULL),
+(3694,0,0,1,1,0,0,NULL),
 (3695,0,0,1,1,0,0,NULL),
 (3696,0,0,1,16,0,0,NULL),
 (3698,0,0,1,16,0,0,NULL),
