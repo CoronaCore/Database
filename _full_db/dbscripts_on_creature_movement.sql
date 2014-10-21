@@ -269,6 +269,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (590102,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,'Islen idle'),
 (617601,0,20,1,0,6176,10,0,0,0,0,0,0,0,0,0,'6176 - movement chenged to 0:idle'),
 (722805,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,'pause Ironaya'),
+(741101,3,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'despawn'),
 (760401,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,'Sergeant Bly - stop movement'),
 (760402,0,1,71,0,0,0,0,0,0,0,0,0,0,0,0,'Raven - emote cheer'),
 (760402,0,22,495,0,0,0,0,0,0,0,0,0,0,0,0,'Sergeant Bly - update faction'),
