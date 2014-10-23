@@ -17,5 +17,3 @@ Short instruction:
    it under *nix/Linux)
 
 3. apply created file to mangos database, eg.: mysql -u root -p mangos < full_db.sql
-
-That's all!
