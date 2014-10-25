@@ -15520,6 +15520,7 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1794306,17943,7,0,100,2,0,0,0,0,22,1,0,0,40,1,0,0,0,0,0,0,'Night Elf Archer - Set Phase 1 and Set Melee Weapon Model on Evade'),
 (1794501,17945,9,0,100,3,0,5,6000,10000,11,31779,1,0,0,0,0,0,0,0,0,0,'Night Elf Huntress - Cast Cleave'),
 (1794601,17946,0,0,100,3,1000,2000,2000,3000,11,39349,1,0,0,0,0,0,0,0,0,0,'Ancient Wisp - Cast Ancient Spark'),
+(1794901,17949,11,0,100,0,0,0,0,0,11,17321,0,1,0,0,0,0,0,0,0,0,'Malfurion Stormrage - spawn effect'),
 (1795201,17952,9,0,100,7,0,5,7000,13000,11,34370,1,0,0,0,0,0,0,0,0,0,'Darkwater Crocolisk - Cast Jagged Tooth Snap'),
 (1795701,17957,4,0,100,6,0,0,0,0,22,1,0,0,0,0,0,0,0,0,0,0,'Coilfang Champion - Set Phase 1 on Aggro'),
 (1795702,17957,9,5,100,7,0,5,5400,9600,11,16145,1,0,0,0,0,0,0,0,0,0,'Coilfang Champion - Cast Sunder Armor (Phase 1)'),
@@ -17256,9 +17257,9 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1954601,19546,1,0,100,0,0,0,0,0,21,0,0,0,22,0,0,0,0,0,0,0,'Abjurist Belmara - Prevent Combat Movement and Set Phase to 0 on Spawn'),
 (1954602,19546,1,0,100,1,1000,1000,1800000,1800000,11,12544,0,1,0,0,0,0,0,0,0,0,'Abjurist Belmara - Cast Frost Armor on Spawn'),
 (1954603,19546,4,0,100,0,0,0,0,0,11,34447,1,0,22,1,0,0,0,0,0,0,'Abjurist Belmara - Cast Arcane Missiles and Set Phase 1 on Aggro'),
-(1954604,19546,9,13,100,1,0,30,3400,4800,11,34447,1,0,0,0,0,0,0,0,0,0,'Abjurist Belmara - Cast Arcane Missiles (Phase 1)'),
-(1954605,19546,3,13,100,0,7,0,0,0,21,1,0,0,23,1,0,0,0,0,0,0,'Abjurist Belmara - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)');
+(1954604,19546,9,13,100,1,0,30,3400,4800,11,34447,1,0,0,0,0,0,0,0,0,0,'Abjurist Belmara - Cast Arcane Missiles (Phase 1)');
 INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
+(1954605,19546,3,13,100,0,7,0,0,0,21,1,0,0,23,1,0,0,0,0,0,0,'Abjurist Belmara - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 (1954606,19546,9,13,100,0,25,80,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Abjurist Belmara - Start Combat Movement at 25 Yards (Phase 1)'),
 (1954607,19546,9,13,100,1,5,15,1000,1000,21,0,0,0,0,0,0,0,0,0,0,0,'Abjurist Belmara - Prevent Combat Movement at 15 Yards (Phase 1)'),
 (1954608,19546,9,13,100,1,0,5,1000,1000,21,1,0,0,0,0,0,0,0,0,0,0,'Abjurist Belmara - Start Combat Movement Below 5 Yards (Phase 1)'),
