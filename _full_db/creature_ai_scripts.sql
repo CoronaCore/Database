@@ -14541,6 +14541,7 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1721003,17210,2,0,100,0,15,0,0,0,39,40,0,0,1,-551,0,0,0,0,0,0,'Sentinel Leader - Call For Help at 15% HP'),
 (1721101,17211,9,0,100,3,0,8,5000,8000,11,37406,1,0,0,0,0,0,0,0,0,0,'Human Footman - Cast Heroic Blow'),
 (1721701,17217,1,0,100,1,1000,1000,600000,600000,11,31271,0,0,0,0,0,0,0,0,0,0,'Barbed Crawler - Cast Thorns on Spawn'),
+(1722601,17226,8,0,100,0,30077,-1,0,0,33,17226,6,0,48,2,0,0,0,0,0,0,'Viera Sunwhisper - Kill Credit and WP movement on Spell Hit'),
 (1722901,17229,0,0,100,3,4000,7000,9000,12000,11,30053,4,32,0,0,0,0,0,0,0,0,'Kil\'rek - Cast Amplify Flames'),
 (1722902,17229,6,0,100,2,0,0,0,0,11,30065,1,7,0,0,0,0,0,0,0,0,'Kil\'rek - Cast Broken Pact on Death'),
 (1723501,17235,0,0,100,1,6000,8000,25000,28000,11,8190,0,0,0,0,0,0,0,0,0,0,'Witch Doctor Mai\'jin - Cast Magma Totem'),
@@ -17256,9 +17257,9 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1954513,19545,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Cohlien Frostweaver - Set Phase to 0 on Evade'),
 (1954601,19546,1,0,100,0,0,0,0,0,21,0,0,0,22,0,0,0,0,0,0,0,'Abjurist Belmara - Prevent Combat Movement and Set Phase to 0 on Spawn'),
 (1954602,19546,1,0,100,1,1000,1000,1800000,1800000,11,12544,0,1,0,0,0,0,0,0,0,0,'Abjurist Belmara - Cast Frost Armor on Spawn'),
-(1954603,19546,4,0,100,0,0,0,0,0,11,34447,1,0,22,1,0,0,0,0,0,0,'Abjurist Belmara - Cast Arcane Missiles and Set Phase 1 on Aggro'),
-(1954604,19546,9,13,100,1,0,30,3400,4800,11,34447,1,0,0,0,0,0,0,0,0,0,'Abjurist Belmara - Cast Arcane Missiles (Phase 1)');
+(1954603,19546,4,0,100,0,0,0,0,0,11,34447,1,0,22,1,0,0,0,0,0,0,'Abjurist Belmara - Cast Arcane Missiles and Set Phase 1 on Aggro');
 INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
+(1954604,19546,9,13,100,1,0,30,3400,4800,11,34447,1,0,0,0,0,0,0,0,0,0,'Abjurist Belmara - Cast Arcane Missiles (Phase 1)'),
 (1954605,19546,3,13,100,0,7,0,0,0,21,1,0,0,23,1,0,0,0,0,0,0,'Abjurist Belmara - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 (1954606,19546,9,13,100,0,25,80,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Abjurist Belmara - Start Combat Movement at 25 Yards (Phase 1)'),
 (1954607,19546,9,13,100,1,5,15,1000,1000,21,0,0,0,0,0,0,0,0,0,0,0,'Abjurist Belmara - Prevent Combat Movement at 15 Yards (Phase 1)'),
