@@ -17,3 +17,11 @@ Short instruction:
    it under *nix/Linux)
 
 3. apply created file to mangos database, eg.: mysql -u root -p mangos < full_db.sql
+
+## Credits
+
+  * [Unified-DB](https://github.com/unified-db)
+  * [TBC-DB](https://github.com/tbc-db)
+  * [ACID](https://github.com/ACID-Scripts)
+  * [CMaNGOS](https://github.com/cmangos)
+  * [ScriptDev2](https://github.com/scriptdev2)
