@@ -6253,7 +6253,19 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (15013,1,'Eye of Storm: Dreanei Ruins Tower power up buff'),
 (25427,4,'Netherwing eggs - Dragonmaw fortrees'),
 (25428,7,'Netherwing eggs - Ledge'),
-(25429,5,'Netherwing eggs - Dragonmaw fortrees');
+(25429,5,'Netherwing eggs - Dragonmaw fortrees'),
+(25456,1,'Veil Lithic - Cursed Eggs - Pool 1'),
+(25457,1,'Veil Lithic - Cursed Eggs - Pool 2'),
+(25458,1,'Veil Lithic - Cursed Eggs - Pool 3'),
+(25459,1,'Veil Lithic - Cursed Eggs - Pool 4'),
+(25460,1,'Veil Lithic - Cursed Eggs - Pool 5'),
+(25461,1,'Veil Lithic - Cursed Eggs - Pool 6'),
+(25462,1,'Veil Lithic - Cursed Eggs - Pool 7'),
+(25463,1,'Veil Lithic - Cursed Eggs - Pool 8'),
+(25464,1,'Veil Lithic - Cursed Eggs - Pool 9'),
+(25465,1,'Veil Lithic - Cursed Eggs - Pool 10'),
+(25466,1,'Veil Lithic - Cursed Eggs - Pool 11'),
+(25467,1,'Veil Lithic - Cursed Eggs - Pool 12');
 /*!40000 ALTER TABLE `pool_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
