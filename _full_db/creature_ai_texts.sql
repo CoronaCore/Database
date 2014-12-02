@@ -719,6 +719,7 @@ INSERT INTO `creature_ai_texts` (`entry`, `content_default`, `content_loc1`, `co
 (-349,'Where is that dog?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,11796,0,0,0,'23618'),
 (-346,'%s begins to summon in reinforcements!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'2358'),
 (-345,'The only justice is death!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18796'),
+(-344,'%s\'s death cry has stirred the nearby silithid hive.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'Tortured Druid/Sentinel death'),
 (-343,'%s calls for reinforcements!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'17976'),
 (-342,'%s calls more of his allies out of the shadows.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'639'),
 (-341,'%s jumps out of the shadows!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'636'),
