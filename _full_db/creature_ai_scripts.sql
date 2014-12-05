@@ -656,7 +656,7 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (63602,636,4,0,100,2,0,0,0,0,28,0,6408,0,1,-341,0,0,0,0,0,0,'Defias Blackguard - Remove Faded and Emote on Aggro'),
 (63901,639,11,0,100,2,0,0,0,0,11,12787,0,0,0,0,0,0,0,0,0,0,'Edwin VanCleef - Cast Thrash on Spawn'),
 (63902,639,4,0,100,2,0,0,0,0,1,-169,0,0,11,674,0,0,0,0,0,0,'Edwin VanCleef - Yell and Cast Dual Wield on Aggro'),
-(63903,639,2,0,100,2,75,51,0,0,1,-171,0,0,11,5200,0,0,0,0,0,0,'Edwin VanCleef - Yell and Summon VanCleef\'s Allies at 75% HP'),
+(63903,639,2,0,100,2,75,51,0,0,1,-171,0,0,0,0,0,0,0,0,0,0,'Edwin VanCleef - Yell at 75% HP'),
 (63904,639,2,0,100,2,50,36,0,0,1,-342,0,0,11,5200,0,0,0,0,0,0,'Edwin VanCleef - Emote and Summon VanCleef\'s Allies at 50% HP'),
 (63905,639,2,0,100,2,35,11,0,0,1,-172,0,0,0,0,0,0,0,0,0,0,'Edwin VanCleef - Yell at 35% HP'),
 (63906,639,2,0,100,2,10,0,0,0,1,-173,0,0,0,0,0,0,0,0,0,0,'Edwin VanCleef - Yell at 10% HP'),
@@ -14275,6 +14275,7 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1686103,16861,0,0,80,3,3000,3000,5000,5000,11,28412,4,0,0,0,0,0,0,0,0,0,'Death Lord - Casts Death Coil'),
 (1686301,16863,1,0,100,0,1000,1000,0,0,11,33908,0,0,0,0,0,0,0,0,0,0,'Deranged Helboar - Cast Burning Spikes on Spawn'),
 (1686302,16863,2,0,100,0,30,0,0,0,11,8599,0,0,1,-106,0,0,0,0,0,0,'Deranged Helboar - Cast Enrage When Below 30% HP'),
+(1686303,16863,6,0,100,0,0,0,0,0,11,37689,0,2,0,0,0,0,0,0,0,0,'Deranged Helboar - Cast Tell dog I just died! on Death'),
 (1686701,16867,0,0,100,1,4200,6700,15600,20700,11,11976,1,0,0,0,0,0,0,0,0,0,'Shattered Hand Grunt - Cast Strike'),
 (1686702,16867,0,0,40,1,8500,8500,10000,14000,11,11978,1,0,0,0,0,0,0,0,0,0,'Shattered Hand Grunt - Cast Kick'),
 (1686703,16867,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Shattered Hand Grunt - Flee at 15% HP'),
@@ -17241,9 +17242,9 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1954101,19541,1,0,80,33,60000,60000,200000,230000,1,-318,-319,-1130,1,-1131,-1132,0,0,0,0,0,'Netherstorm Agent - Random Say OOC'),
 (1954301,19543,9,0,100,1,0,5,12000,16000,11,36104,0,0,0,0,0,0,0,0,0,0,'Battle-Mage Dathric - Cast Torrent of Flames'),
 (1954302,19543,0,0,100,1,9000,13000,19000,24000,11,17273,4,1,0,0,0,0,0,0,0,0,'Battle-Mage Dathric - Cast Pyroblast'),
-(1954401,19544,1,0,100,0,0,0,0,0,21,0,0,0,22,0,0,0,0,0,0,0,'Conjurer Luminrath - Prevent Combat Movement and Set Phase to 0 on Spawn'),
-(1954402,19544,4,0,100,0,0,0,0,0,11,9532,1,0,22,1,0,0,0,0,0,0,'Conjurer Luminrath - Cast Lightning Bolt and Set Phase 1 on Aggro');
+(1954401,19544,1,0,100,0,0,0,0,0,21,0,0,0,22,0,0,0,0,0,0,0,'Conjurer Luminrath - Prevent Combat Movement and Set Phase to 0 on Spawn');
 INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
+(1954402,19544,4,0,100,0,0,0,0,0,11,9532,1,0,22,1,0,0,0,0,0,0,'Conjurer Luminrath - Cast Lightning Bolt and Set Phase 1 on Aggro'),
 (1954403,19544,9,13,100,1,0,40,3400,4800,11,9532,1,0,0,0,0,0,0,0,0,0,'Conjurer Luminrath - Cast Lightning Bolt (Phase 1)'),
 (1954404,19544,3,13,100,0,7,0,0,0,21,1,0,0,23,1,0,0,0,0,0,0,'Conjurer Luminrath - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 (1954405,19544,9,13,100,1,25,80,1000,1000,21,1,0,0,0,0,0,0,0,0,0,0,'Conjurer Luminrath - Start Combat Movement at 35 Yards (Phase 1)'),
