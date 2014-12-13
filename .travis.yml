@@ -11,8 +11,6 @@ git:
 
 before_script:
   - cd _tools
-  - chmod 777 make_full_db.sh
-  - chmod 777 make_full_locales_db.sh
   - ./make_full_db.sh
   - ./make_full_locales_db.sh
   - mysql -e 'create database mangos;'
