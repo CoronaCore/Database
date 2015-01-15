@@ -1025,7 +1025,9 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000005781,'Tell me when you are ready, $N. We will attack on your command.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Captain Saeed - say attack prepare'),
 (2000005782,'It\'s now or never, soldiers! Let\'s do this! For K\'aresh! For the Protectorate!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Captain Saeed - say attack start'),
 (2000005783,'The time for your destruction has finally come, Dimensius!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Captain Saeed - say taunt dimensius'),
-(2000005784,'We won. Dimensius no more. Report this proffesor Dabiri.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Captain Saeed - say quest complete');
+(2000005784,'We won. Dimensius no more. Report this proffesor Dabiri.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Captain Saeed - say quest complete'),
+(2000005822,'OH NOES! Da king is dead! Uh... hail to da new king! Yeah!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'mizzle the crafty - new king 1'),
+(2000005823,'Yar, he\'s dead all right. That makes you da new king... well, all of you! Gordok is yours now, boss! You should talk to me so you can learn everything there is about being da king! I was... is his assistant! Yeah, that\'s why I\'m called da crafty one!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'mizzle the crafty - new king 2');
 /*!40000 ALTER TABLE `db_script_string` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
