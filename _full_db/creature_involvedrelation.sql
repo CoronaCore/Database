@@ -1162,7 +1162,6 @@ INSERT INTO `creature_involvedrelation` (`id`, `quest`) VALUES
 (3616,950),
 (3616,951),
 (3616,952),
-(3616,961),
 (3639,953),
 (3644,963),
 (3649,958),
