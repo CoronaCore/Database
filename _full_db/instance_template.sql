@@ -63,7 +63,7 @@ INSERT INTO `instance_template` (`map`, `parent`, `levelMin`, `levelMax`, `maxPl
 (70,0,30,47,10,0,'instance_uldaman'),
 (90,0,15,38,10,0,'instance_gnomeregan'),
 (109,0,35,55,10,0,'instance_sunken_temple'),
-(129,0,25,46,10,0,''),
+(129,0,25,46,10,0,'instance_razorfen_downs'),
 (189,0,20,45,10,0,'instance_scarlet_monastery'),
 (209,0,35,54,10,0,'instance_zulfarrak'),
 (229,0,45,0,10,0,'instance_blackrock_spire'),

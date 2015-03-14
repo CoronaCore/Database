@@ -58,6 +58,7 @@ INSERT INTO `scripted_event_id` (`id`, `ScriptName`) VALUES
 (3098,'event_antalarion_statue_activation'),
 (3099,'event_antalarion_statue_activation'),
 (3100,'event_antalarion_statue_activation'),
+(3130,'event_go_tutenkash_gong'),
 (4884,'event_spell_altar_emberseer'),
 (5618,'event_spell_gandling_shadow_portal'),
 (5619,'event_spell_gandling_shadow_portal'),

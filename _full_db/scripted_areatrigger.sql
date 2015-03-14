@@ -76,6 +76,7 @@ INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES
 (3549,'at_childrens_week_spot'),
 (3550,'at_childrens_week_spot'),
 (3552,'at_childrens_week_spot'),
+(3587,'at_ancient_leaf'),
 (3626,'at_vaelastrasz'),
 (3958,'at_zulgurub'),
 (3960,'at_zulgurub'),
