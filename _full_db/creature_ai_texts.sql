@@ -61,6 +61,13 @@ CREATE TABLE `creature_ai_texts` (
 LOCK TABLES `creature_ai_texts` WRITE;
 /*!40000 ALTER TABLE `creature_ai_texts` DISABLE KEYS */;
 INSERT INTO `creature_ai_texts` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
+(-1333,'Look what the cat dragged in. What can I get you, $n?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Jenn Langston random text'),
+(-1332,'Hi, what would you like?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Jenn Langston random text'),
+(-1331,'What do you fancy, $G sir:miss;?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Jenn Langston random text'),
+(-1330,'Do you think I need more pieces of flair?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Jenn Langston random text'),
+(-1329,'Been a tough day? A nice ale should loosen those worries right up.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Jenn/Elly Langston random text'),
+(-1328,'Well hello, $n, what can I get you today?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Jenn/Elly Langston random text'),
+(-1327,'%s returns the rude gesture to $n',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'Jenn/Elly Langston rude'),
 (-1326,'Gorefiend will have your head, interloper!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,4,0,0,'21788 21795'),
 (-1325,'We are bound here... eternally. It is the will of Gorefiend.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,4,0,0,'21788 21795'),
 (-1324,'We will never dissipate, mortal... Our fate is tied to Gorefiend...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,4,0,0,'21788 21795'),
@@ -406,6 +413,7 @@ INSERT INTO `creature_ai_texts` (`entry`, `content_default`, `content_loc1`, `co
 (-897,'The light condemns all who harbor evil. Now you will die!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'1535'),
 (-896,'You carry the taint of the scourge. Prepare to enter the twisting nether.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'1535'),
 (-895,'There is no escape for you. The Crusade shall destroy all who carry the scourge\'s taint.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'1535'),
+(-860,'Vengeance will not be yours, $N!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'22454'),
 (-840,'A cool breeze caresses your face. Gentle, melodic humming resonates throughout the chamber.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'19412'),
 (-839,'Please don\'t ignore us...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,'19283'),
 (-838,'Spare a copper, madame?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,'19283'),
@@ -440,6 +448,8 @@ INSERT INTO `creature_ai_texts` (`entry`, `content_default`, `content_loc1`, `co
 (-769,'I am slain! Summon Verog!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'Common Say for Kokar Centaurs'),
 (-765,'Death to the interlopers!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18952'),
 (-764,'Leave this place!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'10940'),
+(-763,'Wow, this one is just plain useless. Let me try again.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,'Scholomance Dark Summoner'),
+(-762,'Note the weak binding structure of this one. Be sure to finish your incantations or this is what you will end up with.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,'Scholomance Dark Summoner'),
 (-755,'I HAVE YOUR LITTLE BELT TIED AROUND MY FINGER, SMOTTS. DON\'T YOU WANT IT BACK?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'Mok\'Rash - Random Yell'),
 (-754,'YOU WERE SUCH GOOD SPORT THE LAST TIME...COME OUT!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'Mok\'Rash - Random Yell'),
 (-753,'HAVE YOU RUN OUT OF SHIPS TO SEND? WHERE IS YOUR COURAGE?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'Mok\'Rash - Random Yell'),
@@ -473,7 +483,6 @@ INSERT INTO `creature_ai_texts` (`entry`, `content_default`, `content_loc1`, `co
 (-701,'Impudent fools! I will kill you myself!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8609,1,0,0,'15341'),
 (-699,'Lord Illidan, bless me with the power of the flight!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'11980'),
 (-698,'ATTACK WITH THE FULL FORCE OF NETHERWING, MY CHILDREN! ATTACK!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'11980'),
-(-695,'None may steal the secrets of the Makers!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5851,1,0,0,'7228'),
 (-694,'%s chips and splinters!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'7023'),
 (-687,'Who dares slay one of my Kargath\'s commanders?  You will pay for this... in flesh!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'22374'),
 (-686,'%s begins a massive heal!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'17730'),
