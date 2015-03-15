@@ -64,7 +64,7 @@ LOCK TABLES `dbscripts_on_go_template_use` WRITE;
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (124371,1,10,7228,9000000,0,0,0,0,0,0,0,-235.673,309.639,-47.5976,4.74317,'Summon Ironaya'),
 (124371,27,11,14394,9000000,0,0,0,0,0,0,0,0,0,0,0,'Open the Seal of Khaz\'Mul'),
-(124371,28,0,1,0,7228,100,0,2000005546,0,0,0,0,0,0,0,'Ironaya yell'),
+(124371,28,0,1,0,7228,100,0,2000000430,0,0,0,0,0,0,0,'Ironaya yell'),
 (124371,28,20,2,0,7228,100,0,0,0,0,0,0,0,0,0,'Ironaya starts moving'),
 (128403,2,15,10247,0,0,0,2,0,0,0,0,0,0,0,0,'cast Summon Zul\'Farrak Zombies'),
 (170562,1,0,0,0,9023,20,3,2000000323,0,0,0,0,0,0,0,'Windsor - say on Dughal door open'),
