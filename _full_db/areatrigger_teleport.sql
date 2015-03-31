@@ -220,7 +220,7 @@ INSERT INTO `areatrigger_teleport` (`id`, `name`, `required_level`, `required_it
 (4738,'Zul\'Aman (Entrance)',68,0,0,0,0,0,0,568,120.7,1776,43.46,4.7713),
 (4739,'Zul\'Aman (Exit)',0,0,0,0,0,0,0,530,6851.5,-7997.68,192.36,1.56688),
 (4885,'Magisters\' Terrace (Exit)',0,0,0,0,0,0,0,530,12884.6,-7336.17,65.48,1.09),
-(4887,'Magisters\' Terrace (Entrance)',70,0,0,0,0,0,0,585,7.09,-0.45,-2.8,0.05),
+(4887,'Magisters\' Terrace (Entrance)',70,0,0,0,0,0,11492,585,7.09,-0.45,-2.8,0.05),
 (4889,'Sunwell Plateau (Entrance)',70,0,0,0,0,0,0,580,1790.65,925.67,15.15,3.1),
 (4891,'Sunwell Plateau (Exit)',0,0,0,0,0,0,0,530,12560.8,-6774.59,15.08,6.25);
 /*!40000 ALTER TABLE `areatrigger_teleport` ENABLE KEYS */;
