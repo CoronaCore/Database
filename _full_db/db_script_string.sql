@@ -378,6 +378,7 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000000471,'%s resumes plaing on the beach.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
 (2000000472,'Gah! Every time I load something into the wagon, it reappears here within moments!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,6,NULL),
 (2000000473,'I should have better than to have given Silanna that tome of cantrips.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000000474,'Putting the bottles away, %s sighs.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
 (2000001022,'No,not so.What happened here?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',0,0,0,0,NULL),
 (2000001023,'Metal lost its magic. I could make out his weapon, but it will not differ from the conventional blade.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',0,0,0,0,NULL),
 (2000001086,'My gratitude knows no bounds, $N. Finally I was able to leave the tower and freed from the shackles of bad magic, Kael!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Моя благодарность не знает границ, $N. Наконец-то я смогу покинуть эту башню и освободиться от оков скверной магии Келя!',0,0,0,0,NULL),
