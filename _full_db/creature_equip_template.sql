@@ -51,6 +51,7 @@ LOCK TABLES `creature_equip_template` WRITE;
 /*!40000 ALTER TABLE `creature_equip_template` DISABLE KEYS */;
 INSERT INTO `creature_equip_template` (`entry`, `equipentry1`, `equipentry2`, `equipentry3`) VALUES
 (1874,2183,2183,0),
+(2300,28767,28767,0),
 (2494,13222,0,0),
 (5001,0,0,5258),
 (5002,0,0,5259),
