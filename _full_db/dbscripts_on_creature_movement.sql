@@ -983,6 +983,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2023801,0,25,20238,1,0,0,0,0,0,0,0,0,0,0,0,'RUN ON'),
 (2023802,0,25,20238,0,0,0,0,0,0,0,0,0,0,0,0,'RUN OFF'),
 (2061701,1,15,35487,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(2086501,0,25,1,0,0,0,0,0,0,0,0,0,0,0,0,'Protean Horror (Arcatraz) RUN ON'),
 (2098501,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,'Captain Saeed - pause WP Movement'),
 (2098536,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,'Captain Saeed - pause WP Movement'),
 (2098536,0,29,1,1,0,0,0,0,0,0,0,0,0,0,0,'Captain Saeed - add Gossip Flag'),
