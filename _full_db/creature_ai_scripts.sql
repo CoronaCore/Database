@@ -7656,6 +7656,9 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (649001,6490,0,0,100,3,30000,30000,30000,30000,11,5137,1,0,0,0,0,0,0,0,0,0,'Azshir the Sleepless - Cast Call of the Grave'),
 (649002,6490,0,0,100,3,20000,20000,20000,20000,11,7399,1,0,0,0,0,0,0,0,0,0,'Azshir the Sleepless - Cast Terrify'),
 (649003,6490,2,0,100,3,50,0,20000,20000,11,9373,4,0,0,0,0,0,0,0,0,0,'Azshir the Sleepless - Cast Soul Siphon'),
+(649201,6492,11,0,100,0,0,0,0,0,11,9093,0,1,0,0,0,0,0,0,0,0,'Rift Spawn - Cast Rift Spawn Invisibility on Spawn'),
+(649202,6492,8,0,100,0,9095,-1,1000,1000,28,0,9093,0,2,16,1,0,13,100,1,0,'Rift Spawn - Remove Rift Spawn Invisibility on Cantation of Manifestation Spellhit'),
+(649203,6492,21,0,100,0,0,0,0,0,11,9093,0,1,0,0,0,0,0,0,0,0,'Rift Spawn - Cast Rift Spawn Invisibility on Return Home'),
 (649801,6498,0,0,100,1,8000,8000,20000,30000,11,14099,1,0,0,0,0,0,0,0,0,0,'Devilsaur - Cast Mighty Blow'),
 (650001,6500,0,0,100,1,10000,10000,8000,8008,11,14100,0,0,0,0,0,0,0,0,0,0,'Tyrant Devilsaur - Cast Terrifying Roar'),
 (650101,6501,9,0,100,1,6,15,6000,6000,11,6268,0,0,0,0,0,0,0,0,0,0,'Stegodon - Cast Rushing Charge'),
@@ -8768,11 +8771,11 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (820207,8202,9,5,100,1,0,5,1000,1000,21,1,0,0,0,0,0,0,0,0,0,0,'Cyclok the Mad - Start Combat Movement Below 5 Yards'),
 (820208,8202,3,3,100,1,100,30,1000,1000,22,1,0,0,0,0,0,0,0,0,0,0,'Cyclok the Mad - Set Phase 1 when Mana is above 30% (Phase 2)'),
 (820209,8202,0,0,100,1,7000,11000,15000,19000,11,11975,0,1,0,0,0,0,0,0,0,0,'Cyclok the Mad - Cast Arcane Explosion'),
-(820210,8202,2,0,100,0,30,0,0,0,11,6742,0,1,0,0,0,0,0,0,0,0,'Cyclok the Mad - Cast Bloodlust at 30% HP'),
+(820210,8202,2,0,100,0,30,0,0,0,11,6742,0,1,0,0,0,0,0,0,0,0,'Cyclok the Mad - Cast Bloodlust at 30% HP');
+INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
 (820211,8202,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Cyclok the Mad - Set Phase to 0 on Evade'),
 (820301,8203,0,0,100,1,9000,16000,16000,21000,11,40504,1,0,0,0,0,0,0,0,0,0,'Kregg Keelhaul - Cast Cleave'),
-(820302,8203,0,0,100,1,6000,10000,9000,14000,11,11976,4,0,0,0,0,0,0,0,0,0,'Kregg Keelhaul - Cast Strike');
-INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
+(820302,8203,0,0,100,1,6000,10000,9000,14000,11,11976,4,0,0,0,0,0,0,0,0,0,'Kregg Keelhaul - Cast Strike'),
 (820401,8204,0,0,100,1,9700,14200,22100,27900,11,12097,1,0,0,0,0,0,0,0,0,0,'Soriid the Devourer - Cast Pierce Armor'),
 (820402,8204,0,0,100,1,12400,17800,15100,26900,11,13445,4,0,0,0,0,0,0,0,0,0,'Soriid the Devourer - Cast Rend'),
 (820501,8205,11,0,100,0,0,0,0,0,11,8876,0,0,0,0,0,0,0,0,0,0,'Haarka the Ravenous - Cast Thrash on Spawn'),
@@ -17238,11 +17241,11 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1943404,19434,3,5,100,1,15,0,1000,1000,21,1,0,0,23,1,0,0,0,0,0,0,'Dreadcaller - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
 (1943405,19434,9,5,100,1,25,80,1000,1000,21,1,0,0,0,0,0,0,0,0,0,0,'Dreadcaller - Start Combat Movement at 35 Yards (Phase 1)'),
 (1943406,19434,9,5,100,1,5,15,1000,1000,21,0,0,0,0,0,0,0,0,0,0,0,'Dreadcaller - Prevent Combat Movement at 15 Yards (Phase 1)'),
-(1943407,19434,9,5,100,1,0,5,1000,1000,21,1,0,0,0,0,0,0,0,0,0,0,'Dreadcaller - Start Combat Movement Below 5 Yards'),
+(1943407,19434,9,5,100,1,0,5,1000,1000,21,1,0,0,0,0,0,0,0,0,0,0,'Dreadcaller - Start Combat Movement Below 5 Yards');
+INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
 (1943408,19434,3,3,100,1,100,30,1000,1000,22,1,0,0,0,0,0,0,0,0,0,0,'Dreadcaller - Set Phase 1 when Mana is above 30% (Phase 2)'),
 (1943409,19434,0,0,100,1,4000,9000,18100,24000,11,11443,1,1,0,0,0,0,0,0,0,0,'Dreadcaller - Cast Cripple'),
-(1943410,19434,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Dreadcaller - Set Phase to 0 on Evade');
-INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
+(1943410,19434,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Dreadcaller - Set Phase to 0 on Evade'),
 (1944001,19440,0,0,100,1,6000,6000,0,0,41,0,0,0,0,0,0,0,0,0,0,0,'Eye of Grillok - Despawn after 6 seconds'),
 (1944002,19440,4,0,100,0,0,0,0,0,1,-48,0,0,0,0,0,0,0,0,0,0,'Eye of Grillok - Emote on aggro'),
 (1944201,19442,0,0,100,1,5000,5000,8000,8000,11,30478,1,1,0,0,0,0,0,0,0,0,'Worg Master Kruush - Cast Hemmorrhage'),
@@ -18164,13 +18167,15 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (2086801,20868,9,0,100,7,0,20,17000,25000,11,36677,4,1,0,0,0,0,0,0,0,0,'Entropic Eye - Cast Chaos Breath'),
 (2086802,20868,9,0,100,3,0,5,6000,8000,11,36664,4,0,0,0,0,0,0,0,0,0,'Entropic Eye (Normal) - Cast Tentacle Cleave'),
 (2086803,20868,9,0,100,5,0,5,4000,7000,11,38816,4,0,0,0,0,0,0,0,0,0,'Entropic Eye (Heroic) - Cast Tentacle Cleave'),
-(2086901,20869,11,0,100,2,0,0,0,0,11,36716,0,0,0,0,0,0,0,0,0,0,'Arcatraz Sentinel (Normal) - Cast Energy Discharge on Spawn'),
-(2086902,20869,11,0,100,4,0,0,0,0,11,38828,0,0,0,0,0,0,0,0,0,0,'Arcatraz Sentinel (Heroic) - Cast Energy Discharge on Spawn'),
+(2086901,20869,11,0,100,2,0,0,0,0,11,36716,0,0,42,1,1,0,0,0,0,0,'Arcatraz Sentinel (Normal) - Cast Energy Discharge and Set Min Health At 1% on Spawn'),
+(2086902,20869,11,0,100,4,0,0,0,0,11,38828,0,0,42,1,1,0,0,0,0,0,'Arcatraz Sentinel (Heroic) - Cast Energy Discharge and Set Min Health At 1% on Spawn'),
 (2086903,20869,1,0,100,6,1000,1000,0,0,11,31261,0,0,0,0,0,0,0,0,0,0,'Arcatraz Sentinel - Cast Permanent Feign Death (Root) on Spawn'),
 (2086904,20869,10,0,100,2,0,5,0,0,28,0,31261,0,28,0,36716,0,0,0,0,0,'Arcatraz Sentinel (Normal) - Remove Permanent Feign Death (Root) and Energy Discharge on Hostile LOS at 5 Yards'),
 (2086905,20869,10,0,100,4,0,5,0,0,28,0,31261,0,28,0,38828,0,0,0,0,0,'Arcatraz Sentinel (Heroic) - Remove Permanent Feign Death (Root) and Energy Discharge on Hostile LOS at 5 Yards'),
-(2086906,20869,2,0,100,2,8,0,0,0,11,36719,0,1,36,21761,0,0,0,0,0,0,'Arcatraz Sentinel (Normal) - Cast Explode and Transform into Destroyed Sentinel at 8% HP'),
-(2086907,20869,2,0,100,4,8,0,0,0,11,38830,0,1,36,21761,0,0,0,0,0,0,'Arcatraz Sentinel (Heroic) - Cast Explode and Transform into Destroyed Sentinel at 8% HP'),
+(2086906,20869,2,0,100,2,8,0,2000,2000,11,36719,0,1,36,21761,0,0,33,20869,1,0,'Arcatraz Sentinel (Normal) - Cast Explode and Transform into Destroyed Sentinel at 8% HP and Give Quest Credit'),
+(2086907,20869,2,0,100,4,8,0,2000,2000,11,38830,0,1,36,21761,0,0,33,20869,1,0,'Arcatraz Sentinel (Heroic) - Cast Explode and Transform into Destroyed Sentinel at 8% HP and Give Quest Credit'),
+(2086908,20869,21,0,100,2,0,0,0,0,11,36716,0,0,42,1,1,0,0,0,0,0,'Arcatraz Sentinel (Normal) - Cast Energy Discharge and Set Min Health At 1% on Return Home'),
+(2086909,20869,21,0,100,4,0,0,0,0,11,38828,0,0,42,1,1,0,0,0,0,0,'Arcatraz Sentinel (Heroic) - Cast Energy Discharge and Set Min Health At 1% on Return Home'),
 (2087001,20870,4,0,100,6,0,0,0,0,1,-634,0,0,0,0,0,0,0,0,0,0,'Zereketh The Unbound - Yell on Aggro'),
 (2087002,20870,0,0,100,7,21000,32000,32000,45000,11,36119,4,0,0,0,0,0,0,0,0,0,'Zereketh The Unbound - Cast Void Zone'),
 (2087003,20870,9,0,100,3,0,30,14000,21000,11,32863,4,33,0,0,0,0,0,0,0,0,'Zereketh The Unbound (Normal) - Cast Seed of Corruption'),
