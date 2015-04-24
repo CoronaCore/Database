@@ -61,6 +61,10 @@ CREATE TABLE `creature_ai_texts` (
 LOCK TABLES `creature_ai_texts` WRITE;
 /*!40000 ALTER TABLE `creature_ai_texts` DISABLE KEYS */;
 INSERT INTO `creature_ai_texts` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
+(-1337,'Do not be disheartened. Silvermoon will remain strong through this course of events.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18103'),
+(-1336,'Happiness is mandatory, citizen.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18103'),
+(-1335,'Maintain order within these walls.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18103'),
+(-1334,'Remain strong. Kael\'thas will - error - Lor\'themar will lead you to power and glory!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18103'),
 (-1333,'Look what the cat dragged in. What can I get you, $n?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Jenn Langston random text'),
 (-1332,'Hi, what would you like?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Jenn Langston random text'),
 (-1331,'What do you fancy, $G sir:miss;?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Jenn Langston random text'),
@@ -199,6 +203,8 @@ INSERT INTO `creature_ai_texts` (`entry`, `content_default`, `content_loc1`, `co
 (-1196,'You just got MALOWNED!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'11143'),
 (-1195,'Prepare to be Malowned!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'11143'),
 (-1194,'Emperor Thaurissan does not wish to be disturbed! Turn back now or face your doom, weak mortals!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'9938'),
+(-1171,'Do not disturb the serenity of the city. Peace must be upheld.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18103'),
+(-1170,'Obey the laws of Silvermoon. Failure to do so will result in termination.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18103'),
 (-1169,'Can you really hear the ocean from one of these shells?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,10,0,'20244'),
 (-1168,'I think I can see the Sunwell from here!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,10,0,'20244'),
 (-1167,'Oooh, a shiny one!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,10,0,'20244'),
