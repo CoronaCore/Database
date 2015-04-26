@@ -64,6 +64,7 @@ LOCK TABLES `dbscripts_on_creature_death` WRITE;
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (3421,1,23,0,0,0,0,0,0,0,0,0,0,0,0,0,'demorph'),
 (15655,10,18,0,0,0,0,4,0,0,0,0,0,0,0,0,'desp'),
+(17119,1,20,0,0,0,0,0,0,0,0,0,0,0,0,0,'movement chenged to 0:idle'),
 (19554,0,0,0,0,20985,50,0,2000005784,0,0,0,0,0,0,0,'Captain Saeed - say quest complete'),
 (19554,10,18,0,0,20985,50,7,0,0,0,0,0,0,0,0,'Captain Saeed - despawn self'),
 (20427,0,0,0,0,21332,100,32,2000005557,0,0,0,0,0,0,0,'say veneratus epilogue 1'),

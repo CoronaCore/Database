@@ -169,6 +169,8 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 (7186,5,25,1,0,0,0,0,0,0,0,0,0,0,0,0,'Varnis prepare to run'),
 (7186,5,20,2,0,0,0,0,0,0,0,0,0,0,0,0,'Varnis run'),
 (7186,10,8,16206,1,0,0,0,0,0,0,0,0,0,0,0,'Quest credit Varnis'),
+(7371,1,20,2,0,0,0,0,0,0,0,0,0,0,0,0,'movement chenged to 2:waypoint'),
+(7371,5,8,17119,0,0,0,0,0,0,0,0,0,0,0,0,''),
 (7399,0,15,30353,0,0,0,0,0,0,0,0,0,0,0,0,'cast Summon Tree Disguise Kit'),
 (7415,0,15,32474,0,0,0,0,0,0,0,0,0,0,0,0,'cast Buffeting Winds of Susurrus'),
 (7449,0,15,31609,0,0,0,0,0,0,0,0,0,0,0,0,'cast spell 31609'),
