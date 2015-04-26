@@ -390,6 +390,8 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000000483,'Hah! Bullseye!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000484,'Agh... a chill ran up my spine.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000000485,'They\'ll see the light, I hope.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000000486,'I think, I\'ll be able to get to Brackenwall. The cargo they carried to the top of the towers. Be careful!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,''),
+(2000000487,'To arms! the prisoner is escaping!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,''),
 (2000001022,'No,not so.What happened here?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',0,0,0,0,NULL),
 (2000001023,'Metal lost its magic. I could make out his weapon, but it will not differ from the conventional blade.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',0,0,0,0,NULL),
 (2000001086,'My gratitude knows no bounds, $N. Finally I was able to leave the tower and freed from the shackles of bad magic, Kael!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Моя благодарность не знает границ, $N. Наконец-то я смогу покинуть эту башню и освободиться от оков скверной магии Келя!',0,0,0,0,NULL),
