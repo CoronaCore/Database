@@ -61,6 +61,11 @@ CREATE TABLE `creature_ai_texts` (
 LOCK TABLES `creature_ai_texts` WRITE;
 /*!40000 ALTER TABLE `creature_ai_texts` DISABLE KEYS */;
 INSERT INTO `creature_ai_texts` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
+(-1342,'No, no, no! Come back here!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18230'),
+(-1341,'You stay out of the regent lord\'s way! I mean it!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18230'),
+(-1340,'When I catch you, I\'m going to disenchant your components, so help me...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18230'),
+(-1339,'Argh. They told me those crystals would work properly!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18230'),
+(-1338,'The magister\'s going to kill me...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18230'),
 (-1337,'Do not be disheartened. Silvermoon will remain strong through this course of events.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18103'),
 (-1336,'Happiness is mandatory, citizen.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18103'),
 (-1335,'Maintain order within these walls.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18103'),
