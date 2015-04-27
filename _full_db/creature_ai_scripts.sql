@@ -13945,6 +13945,7 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1642502,16425,13,0,100,3,5000,8000,0,0,11,29684,1,1,0,0,0,0,0,0,0,0,'Phantom Guardsman - Cast Shield Slam on Target Spell Casting'),
 (1642503,16425,2,0,100,3,75,0,45000,60000,11,29537,0,1,0,0,0,0,0,0,0,0,'Phantom Guardsman - Summon Phantom Hound at 75% HP'),
 (1644201,16442,4,0,100,0,0,0,0,0,12,16222,1,300000,0,0,0,0,0,0,0,0,'Vinemaster Suntouched - Summon Silvermoon City Guardian on Aggro'),
+(1644202,16442,1,0,75,1,2000,3500,6500,9000,5,1,0,0,0,0,0,0,0,0,0,0,'Vinemaster Suntouched - Emote while OOC'),
 (1644601,16446,0,0,100,3,0,0,10000,10000,11,29325,0,0,0,0,0,0,0,0,0,0,'Plague Gargoyle - Casts Acid Volley'),
 (1644602,16446,2,0,75,3,50,0,30000,30000,11,28995,0,0,0,0,0,0,0,0,0,0,'Plague Gargoyle - Casts Stoneskin'),
 (1644701,16447,0,0,100,3,2000,2000,12000,12000,11,29915,1,0,0,0,0,0,0,0,0,0,'Plagued Ghoul - Casts Flesh Rot'),
@@ -15934,6 +15935,7 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1822110,18221,2,0,100,1,50,0,15000,21000,11,12039,0,1,0,0,0,0,0,0,0,0,'Holaaru - Cast Heal at 50% HP'),
 (1822111,18221,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Holaaru - Set Phase to 0 on Evade'),
 (1822501,18225,11,0,100,0,0,0,0,0,11,31961,0,0,0,0,0,0,0,0,0,0,'Fire Bomb Target - Cast Fire Bomb on Spawn'),
+(1823001,18230,1,0,75,33,6000,18000,32000,48000,1,-1338,-1339,-1340,1,-1341,-1342,0,0,0,0,0,'Trayanise - Random say on OOC'),
 (1823101,18231,4,0,100,0,0,0,0,0,12,16222,1,300000,0,0,0,0,0,0,0,0,'Keyanomir - Summon Silvermoon City Guardian on Aggro'),
 (1824101,18241,2,0,100,1,20,0,120000,120000,11,8599,0,1,1,-106,0,0,0,0,0,0,'Crusty - Cast Enrage at 20% HP'),
 (1824601,18246,1,0,100,1,15000,15000,15000,15000,11,32163,0,0,0,0,0,0,0,0,0,0,'Tayemba - Tayemba Cast Forbosi throws to Tayemba'),
@@ -17238,10 +17240,10 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1942805,19428,0,0,100,7,6200,21700,12100,22800,11,38110,0,0,0,0,0,0,0,0,0,0,'Cobalt Serpent - Cast Wing Buffet'),
 (1942901,19429,9,0,100,2,8,25,0,0,11,38059,1,1,0,0,0,0,0,0,0,0,'Avian Darkhawk (Normal) - Cast Sonic Charge'),
 (1942902,19429,9,0,100,4,8,25,0,0,11,39197,1,1,0,0,0,0,0,0,0,0,'Avian Darkhawk (Heroic) - Cast Sonic Charge'),
-(1942903,19429,0,0,100,3,4800,13600,10900,24100,11,32901,1,0,0,0,0,0,0,0,0,0,'Avian Darkhawk (Normal) - Cast Carnivorous Bite'),
-(1942904,19429,0,0,100,5,4800,13600,10900,24100,11,39198,1,0,0,0,0,0,0,0,0,0,'Avian Darkhawk (Heroic) - Cast Carnivorous Bite'),
-(1943401,19434,1,0,100,0,0,0,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Dreadcaller - Prevent Combat Movement on Spawn');
+(1942903,19429,0,0,100,3,4800,13600,10900,24100,11,32901,1,0,0,0,0,0,0,0,0,0,'Avian Darkhawk (Normal) - Cast Carnivorous Bite');
 INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
+(1942904,19429,0,0,100,5,4800,13600,10900,24100,11,39198,1,0,0,0,0,0,0,0,0,0,'Avian Darkhawk (Heroic) - Cast Carnivorous Bite'),
+(1943401,19434,1,0,100,0,0,0,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Dreadcaller - Prevent Combat Movement on Spawn'),
 (1943402,19434,4,0,100,0,0,0,0,0,11,32666,1,0,22,1,0,0,0,0,0,0,'Dreadcaller - Cast Shadow Bolt and Set Phase 1 on Aggro'),
 (1943403,19434,9,5,100,1,0,40,2400,3800,11,32666,1,0,0,0,0,0,0,0,0,0,'Dreadcaller - Cast Shadow Bolt (Phase 1)'),
 (1943404,19434,3,5,100,1,15,0,1000,1000,21,1,0,0,23,1,0,0,0,0,0,0,'Dreadcaller - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
