@@ -50,9 +50,6 @@ CREATE TABLE `creature_equip_template` (
 LOCK TABLES `creature_equip_template` WRITE;
 /*!40000 ALTER TABLE `creature_equip_template` DISABLE KEYS */;
 INSERT INTO `creature_equip_template` (`entry`, `equipentry1`, `equipentry2`, `equipentry3`) VALUES
-(1874,2183,2183,0),
-(2300,28767,28767,0),
-(2494,13222,0,0),
 (5001,0,0,5258),
 (5002,0,0,5259),
 (5003,5187,0,0),
@@ -644,6 +641,9 @@ INSERT INTO `creature_equip_template` (`entry`, `equipentry1`, `equipentry2`, `e
 (5590,11042,12452,0),
 (5591,11087,0,0),
 (5592,12523,0,0),
+(5593,2183,2183,0),
+(5594,28767,28767,0),
+(5595,13222,0,0),
 (10000,12294,0,30452);
 /*!40000 ALTER TABLE `creature_equip_template` ENABLE KEYS */;
 UNLOCK TABLES;
