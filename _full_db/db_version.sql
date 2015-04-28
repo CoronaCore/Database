@@ -48,7 +48,7 @@ CREATE TABLE `db_version` (
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
 INSERT INTO `db_version` (`version`, `creature_ai_version`, `required_s2263_12823_04_mangos_creature`) VALUES
-('OneDatabase 2.0.1 for MaNGOSOne s2120+ and ScriptDevOne s2783+','MaNGOSOne Artificial Creature Intelligence Database',NULL);
+('CoronaCore Database for TBC 2.4.3','CoronaCore Artificial Creature Intelligence Database',NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
