@@ -16635,7 +16635,7 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 (1878901,18789,4,0,100,0,0,0,0,0,12,9527,1,30000,12,9527,1,30000,1,-549,0,0,'Furgu - Summon Enraged Hippogryphs on Aggro'),
 (1879001,18790,4,0,100,0,0,0,0,0,12,16222,1,300000,0,0,0,0,0,0,0,0,'Gatewatcher Aendor - Summon Silvermoon City Guardian on Aggro'),
 (1879101,18791,4,0,100,0,0,0,0,0,12,9297,1,30000,12,9297,1,30000,1,-548,0,0,'Du\'ga - Summon Enraged Wyverns and Yell on Aggro'),
-(1879401,18794,11,0,100,6,0,0,0,0,21,0,0,0,0,0,0,0,30,1,3,5,'Cabal Ritualist - Prevent Combat Movement and Random Phase Select on Spawn'),
+(1879401,18794,11,0,100,6,0,0,0,0,0,0,0,0,0,0,0,0,30,1,3,5,'Cabal Ritualist - Random Phase Select on Spawn'),
 (1879402,18794,4,0,10,38,0,0,0,0,1,-664,-665,-666,1,-667,-668,-669,1,-665,-666,-669,'Cabal Ritualist - Random Say on Aggro'),
 (1879403,18794,4,61,100,2,0,0,0,0,11,15497,1,0,0,0,0,0,0,0,0,0,'Cabal Ritualist (Normal) - Cast Frostbolt on Aggro (Phase 1)'),
 (1879404,18794,9,61,100,3,0,40,3600,4800,11,15497,1,0,0,0,0,0,0,0,0,0,'Cabal Ritualist (Normal) - Cast Frostbolt (Phase 1)'),
