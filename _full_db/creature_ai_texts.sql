@@ -61,6 +61,8 @@ CREATE TABLE `creature_ai_texts` (
 LOCK TABLES `creature_ai_texts` WRITE;
 /*!40000 ALTER TABLE `creature_ai_texts` DISABLE KEYS */;
 INSERT INTO `creature_ai_texts` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
+(-1350,'%s appears very grateful to be free of the koi-koi spirit\'s influence.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,34,'21326'),
+(-1349,'Burn Burn Burn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,12,0,'18109'),
 (-1342,'No, no, no! Come back here!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18230'),
 (-1341,'You stay out of the regent lord\'s way! I mean it!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18230'),
 (-1340,'When I catch you, I\'m going to disenchant your components, so help me...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18230'),
