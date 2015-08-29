@@ -61,6 +61,17 @@ CREATE TABLE `creature_ai_texts` (
 LOCK TABLES `creature_ai_texts` WRITE;
 /*!40000 ALTER TABLE `creature_ai_texts` DISABLE KEYS */;
 INSERT INTO `creature_ai_texts` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
+(-1383,'Your world is at an end.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'21315'),
+(-1371,'%s gets really dizzy!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'9554'),
+(-1370,'Intruders in the Manufactory? My constructs will destroy you!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'8983'),
+(-1369,'What are you doing? Intruders!!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'9476'),
+(-1368,'I cannot be destroyed! By the will of Ragnaros, I shall be reborn!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'9017'),
+(-1367,'Raaar!!! Me smash $R!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,'9196'),
+(-1366,'Me smash! You die!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'9196'),
+(-1365,'I\'ll crush you!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'9196'),
+(-1353,'AAAAEEEEEEIIIIIIII!!!!!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'22483'),
+(-1352,'AWOOOOGAAAA!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'22483'),
+(-1351,'AYYAYAAYAA!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'22483'),
 (-1350,'%s appears very grateful to be free of the koi-koi spirit\'s influence.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,34,'21326'),
 (-1349,'Burn Burn Burn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,12,0,'18109'),
 (-1342,'No, no, no! Come back here!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'18230'),
@@ -536,6 +547,7 @@ INSERT INTO `creature_ai_texts` (`entry`, `content_default`, `content_loc1`, `co
 (-654,'Snivvle is here! Snivvle claims the Coldtooth Mine!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'11677'),
 (-649,'%s goes into a drunken rage!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'14322'),
 (-648,'%s lets out a deep roar, alerting nearby allies and becoming enraged!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'Dire Maul Guards'),
+(-643,'Foolish druid! Dividing your essence has weakened you, opening the door for my master to dominate the Emerald Dream. Your spirit and body will die here!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1,0,0,'22915'),
 (-642,'Listen carefully, for the lord of Blackrock will surely destroy you, should you not be prepared.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Vaelan greetings'),
 (-641,'At last: one among you is worthy of my knowledge. Worry not: I have probed your thoughts, no harm will come to you.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'Vaelan greetings'),
 (-640,'Ah, damn it all! Clever trap. Too bad you\'ll never live to tell the tale...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,'21409'),
