@@ -44,6 +44,7 @@ CREATE TABLE `battleground_template` (
   `AllianceStartO` float NOT NULL,
   `HordeStartLoc` mediumint(8) unsigned NOT NULL,
   `HordeStartO` float NOT NULL,
+  `StartMaxDist` float NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -54,15 +55,15 @@ CREATE TABLE `battleground_template` (
 
 LOCK TABLES `battleground_template` WRITE;
 /*!40000 ALTER TABLE `battleground_template` DISABLE KEYS */;
-INSERT INTO `battleground_template` (`id`, `MinPlayersPerTeam`, `MaxPlayersPerTeam`, `MinLvl`, `MaxLvl`, `AllianceStartLoc`, `AllianceStartO`, `HordeStartLoc`, `HordeStartO`) VALUES
-(1,20,40,51,70,611,2.72532,610,2.27452),
-(2,5,10,10,70,769,3.14159,770,0.00391),
-(3,8,15,20,70,890,3.91992,889,0.88828),
-(4,0,2,10,70,929,0,936,3.14159),
-(5,0,2,10,70,939,0,940,3.14159),
-(6,0,2,10,70,0,0,0,0),
-(7,8,15,61,70,1103,3.22092,1104,0.01649),
-(8,0,2,10,70,1258,0,1259,3.14159);
+INSERT INTO `battleground_template` (`id`, `MinPlayersPerTeam`, `MaxPlayersPerTeam`, `MinLvl`, `MaxLvl`, `AllianceStartLoc`, `AllianceStartO`, `HordeStartLoc`, `HordeStartO`, `StartMaxDist`) VALUES
+(1,20,40,51,70,611,2.72532,610,2.27452,100),
+(2,5,10,10,70,769,3.14159,770,0.00391,75),
+(3,8,15,20,70,890,3.91992,889,0.88828,75),
+(4,0,2,10,70,929,0,936,3.14159,0),
+(5,0,2,10,70,939,0,940,3.14159,0),
+(6,0,2,10,70,0,0,0,0,0),
+(7,8,15,61,70,1103,3.22092,1104,0.01649,75),
+(8,0,2,10,70,1258,0,1259,3.14159,0);
 /*!40000 ALTER TABLE `battleground_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
