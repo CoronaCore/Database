@@ -113,7 +113,7 @@ INSERT INTO `mangos_string` (`entry`, `content_default`, `content_loc1`, `conten
 (55,'Your password can\'t be longer than 16 characters (client limit), password not changed!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (56,'Current Message of the day: \r\n%s',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (57,'Using World DB: %s',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-(58,'Using script library: %s',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(58,'Using script library',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (59,'Using creature EventAI: %s',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (61,'Username: ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (62,'Password: ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
