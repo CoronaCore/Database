@@ -83,7 +83,7 @@ INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalon
 (27695,0,15,27699,0,0,0,4,0,0,0,0,0,0,0,0,'Cast Summon Bone Mage'),
 (31225,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,'create from quest_template'),
 (31550,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'Despawn Time Keepers'),
-(31927,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,'create from quest_template'),
+(31927,1,8,0,0,0,0,0,0,0,0,0,0,0,0,0,'q. credit'),
 (32042,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,'create from quest_template'),
 (32205,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,'create from quest_template'),
 (32314,0,8,18393,0,0,0,0,0,0,0,0,0,0,0,0,'Killcredit for Quest: 9931'),
