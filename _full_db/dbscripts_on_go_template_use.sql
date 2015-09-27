@@ -188,7 +188,8 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (185547,2,10,22993,600000,0,0,0,0,0,0,0,-2623.6,4573.66,138.827,1.64381,'summon'),
 (185551,2,10,22992,600000,0,0,0,0,0,0,0,-4362.77,4626.06,-39.2711,0.86199,'summon'),
 (185553,2,10,22994,600000,0,0,0,0,0,0,0,-3166.13,3809.05,59.7824,1.84486,'summon'),
-(186432,17,27,8,0,0,0,6,0,0,0,0,0,0,0,0,'remove no_interact flag');
+(186432,17,27,8,0,0,0,6,0,0,0,0,0,0,0,0,'remove no_interact flag'),
+(194092,0,15,31116,0,0,0,4,0,0,0,0,0,0,0,0,'cast Summon Nightbane');
 /*!40000 ALTER TABLE `dbscripts_on_go_template_use` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
