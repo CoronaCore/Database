@@ -397,6 +397,7 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000000490,'Jeffrey Kaplan! Tom Chilton! Rob Pardo!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,8,15,NULL),
 (2000000491,'Justin Thavirat! Roman Kenney! Our entire awesome art and animation team!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,8,15,NULL),
 (2000000492,'Kevin Jordan and Jonathan LeCraft!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,8,15,NULL),
+(2000000493,'Try to keep appraisal errors to a minimum.  I\'d hate to tell Gezhe we\'ve overpaid on another gem shipment this month.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
 (2000001022,'No,not so.What happened here?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',0,0,0,0,NULL),
 (2000001023,'Metal lost its magic. I could make out his weapon, but it will not differ from the conventional blade.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'',0,0,0,0,NULL),
 (2000001086,'My gratitude knows no bounds, $N. Finally I was able to leave the tower and freed from the shackles of bad magic, Kael!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Моя благодарность не знает границ, $N. Наконец-то я смогу покинуть эту башню и освободиться от оков скверной магии Келя!',0,0,0,0,NULL),
