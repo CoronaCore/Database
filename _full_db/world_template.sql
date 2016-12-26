@@ -1,5 +1,5 @@
 --
--- Copyright (C) 2012-2015 CoronaCore <http://coronacore.org/>
+-- Copyright (C) 2012-2016 CoronaCore <http://coronacore.org/>
 --
 -- This program is free software; you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -48,8 +48,8 @@ CREATE TABLE `world_template` (
 LOCK TABLES `world_template` WRITE;
 /*!40000 ALTER TABLE `world_template` DISABLE KEYS */;
 INSERT INTO `world_template` (`map`, `ScriptName`) VALUES
-(0,'world_map_eastern_kingdoms'),
 (1,'world_map_kalimdor'),
+(0,'world_map_eastern_kingdoms'),
 (530,'world_map_outland');
 /*!40000 ALTER TABLE `world_template` ENABLE KEYS */;
 UNLOCK TABLES;

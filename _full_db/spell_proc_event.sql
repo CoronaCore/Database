@@ -1,5 +1,5 @@
 --
--- Copyright (C) 2012-2015 CoronaCore <http://coronacore.org/>
+-- Copyright (C) 2012-2016 CoronaCore <http://coronacore.org/>
 --
 -- This program is free software; you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -130,7 +130,7 @@ INSERT INTO `spell_proc_event` (`entry`, `SchoolMask`, `SpellFamilyName`, `Spell
 (17799,32,0,0,0,0,0,0,0,0,0),
 (17800,32,0,0,0,0,0,0,0,0,0),
 (18094,0,5,10,10,10,0,0,0,0,0),
-(18096,0,5,549755813984,549755813984,549755813984,0,0,0,0,0),
+(18096,0,5,549755813984,549755813984,549755813984,331776,0,0,0,0),
 (18119,0,5,18416819766245,18416819766245,18416819766245,0,0,0,0,0),
 (18137,127,0,0,0,0,0,0,0,0,3),
 (18820,127,0,0,0,0,0,65536,0,0,0),

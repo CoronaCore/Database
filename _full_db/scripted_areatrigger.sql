@@ -1,5 +1,5 @@
 --
--- Copyright (C) 2012-2015 CoronaCore <http://coronacore.org/>
+-- Copyright (C) 2012-2016 CoronaCore <http://coronacore.org/>
 --
 -- This program is free software; you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -48,9 +48,25 @@ CREATE TABLE `scripted_areatrigger` (
 LOCK TABLES `scripted_areatrigger` WRITE;
 /*!40000 ALTER TABLE `scripted_areatrigger` DISABLE KEYS */;
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES
-(522,'at_twiggy_flathead'),
-(1447,'at_zulfarrak'),
-(1526,'at_ring_of_law'),
+(4591,'at_coilfang_waterfall'),
+(4560,'at_legion_teleporter'),
+(3066,'at_ravenholdt'),
+(4112,'at_naxxramas'),
+(4113,'at_naxxramas'),
+(4156,'at_naxxramas'),
+(3546,'at_childrens_week_spot'),
+(3547,'at_childrens_week_spot'),
+(3548,'at_childrens_week_spot'),
+(3549,'at_childrens_week_spot'),
+(3550,'at_childrens_week_spot'),
+(3552,'at_childrens_week_spot'),
+(2026,'at_blackrock_spire'),
+(2046,'at_blackrock_spire'),
+(3958,'at_zulgurub'),
+(3960,'at_zulgurub'),
+(3626,'at_vaelastrasz'),
+(4937,'at_sunwell_plateau'),
+(4524,'at_shattered_halls'),
 (1726,'at_scent_larkorwi'),
 (1727,'at_scent_larkorwi'),
 (1728,'at_scent_larkorwi'),
@@ -66,37 +82,23 @@ INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES
 (1738,'at_scent_larkorwi'),
 (1739,'at_scent_larkorwi'),
 (1740,'at_scent_larkorwi'),
-(1966,'at_murkdeep'),
-(2026,'at_blackrock_spire'),
-(2046,'at_blackrock_spire'),
-(3066,'at_ravenholdt'),
-(3546,'at_childrens_week_spot'),
-(3547,'at_childrens_week_spot'),
-(3548,'at_childrens_week_spot'),
-(3549,'at_childrens_week_spot'),
-(3550,'at_childrens_week_spot'),
-(3552,'at_childrens_week_spot'),
-(3587,'at_ancient_leaf'),
-(3626,'at_vaelastrasz'),
-(3958,'at_zulgurub'),
-(3960,'at_zulgurub'),
-(4016,'at_shade_of_eranikus'),
-(4033,'at_stomach_cthun'),
-(4034,'at_stomach_cthun'),
-(4047,'at_temple_ahnqiraj'),
-(4052,'at_temple_ahnqiraj'),
-(4112,'at_naxxramas'),
-(4113,'at_naxxramas'),
-(4156,'at_naxxramas'),
 (4288,'at_dark_portal'),
 (4485,'at_dark_portal'),
-(4497,'at_commander_dawnforge'),
-(4524,'at_shattered_halls'),
-(4560,'at_legion_teleporter'),
-(4591,'at_coilfang_waterfall'),
+(1966,'at_murkdeep'),
+(4047,'at_temple_ahnqiraj'),
+(4052,'at_temple_ahnqiraj'),
+(3587,'at_ancient_leaf'),
+(4479,'at_haramad_teleport'),
+(522,'at_twiggy_flathead'),
+(1526,'at_ring_of_law'),
+(1786,'at_shadowforge_bridge'),
 (4752,'at_nats_landing'),
+(4497,'at_commander_dawnforge'),
+(4016,'at_shade_of_eranikus'),
 (4853,'at_madrigosa'),
-(4937,'at_sunwell_plateau');
+(4033,'at_stomach_cthun'),
+(4034,'at_stomach_cthun'),
+(1447,'at_zulfarrak');
 /*!40000 ALTER TABLE `scripted_areatrigger` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

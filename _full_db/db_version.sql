@@ -1,5 +1,5 @@
 --
--- Copyright (C) 2012-2015 CoronaCore <http://coronacore.org/>
+-- Copyright (C) 2012-2016 CoronaCore <http://coronacore.org/>
 --
 -- This program is free software; you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -37,7 +37,7 @@ DROP TABLE IF EXISTS `db_version`;
 CREATE TABLE `db_version` (
   `version` varchar(120) DEFAULT NULL,
   `creature_ai_version` varchar(120) DEFAULT NULL,
-  `required_s2326_01_mangos_mangos_string` bit(1) DEFAULT NULL
+  `required_s2343_01_mangos_quest_template` bit(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used DB version notes';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -47,8 +47,8 @@ CREATE TABLE `db_version` (
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
-INSERT INTO `db_version` (`version`, `creature_ai_version`, `required_s2326_01_mangos_mangos_string`) VALUES
-('CoronaCore Database for TBC 2.4.3','CoronaCore Artificial Creature Intelligence Database',NULL);
+INSERT INTO `db_version` (`version`, `creature_ai_version`, `required_s2343_01_mangos_quest_template`) VALUES
+('CoronaCore Database for TBC 2.4.3','ACID 2.4.3 (The Burning Crusades) for CMaNGOS-TBC (2.4.3 Client)',NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
