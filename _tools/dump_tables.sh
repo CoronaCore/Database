@@ -45,6 +45,7 @@ creature_template \
 creature_template_addon \
 creature_template_classlevelstats \
 creature_template_spells \
+custom_texts \
 db_script_string \
 db_version \
 dbscripts_on_creature_death \
@@ -76,6 +77,7 @@ gameobject_questrelation \
 gameobject_template \
 gossip_menu \
 gossip_menu_option \
+gossip_texts \
 instance_template \
 item_enchantment_template \
 item_loot_template \
@@ -123,6 +125,8 @@ reference_loot_template \
 reputation_reward_rate \
 reputation_spillover_template \
 reserved_name \
+script_texts \
+script_waypoint \
 scripted_areatrigger \
 scripted_event_id \
 skill_discovery_template \
@@ -146,10 +150,10 @@ transports \
 world_template \
 ; do
 
-echo "Dumping ${i}/129 ${TABLE}..."
+echo "Dumping ${i}/133 ${TABLE}..."
 
 echo "--
--- Copyright (C) 2012-2015 CoronaCore <http://coronacore.org/>
+-- Copyright (C) 2012-2016 CoronaCore <http://coronacore.org/>
 --
 -- This program is free software; you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by

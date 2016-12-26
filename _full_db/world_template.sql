@@ -48,8 +48,8 @@ CREATE TABLE `world_template` (
 LOCK TABLES `world_template` WRITE;
 /*!40000 ALTER TABLE `world_template` DISABLE KEYS */;
 INSERT INTO `world_template` (`map`, `ScriptName`) VALUES
-(1,'world_map_kalimdor'),
 (0,'world_map_eastern_kingdoms'),
+(1,'world_map_kalimdor'),
 (530,'world_map_outland');
 /*!40000 ALTER TABLE `world_template` ENABLE KEYS */;
 UNLOCK TABLES;
